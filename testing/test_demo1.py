@@ -1,5 +1,5 @@
-from src import demo1
+from src import demo_game1
 
-demo1.game()
+demo_game1.game()
 
 
