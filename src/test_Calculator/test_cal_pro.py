@@ -1,6 +1,5 @@
 import pytest
 import yaml
-
 from src.test_Calculator.src.calculator import Calculator
 
 
