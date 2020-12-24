@@ -1,0 +1,35 @@
+datas:
+  data_add:
+    - [3, 5, 8]
+    - [-1, -2, -3]
+    - [10000, 10, 10010]
+  data_sub:
+    - [8, 5, 3]
+    - [10, 4, 6]
+    - [500, 80, 420]
+  data_mul:
+    - [2, 3, 6]
+    - [3, 4, 12]
+    - [100, 200, 20000]
+  data_div:
+    - [6, 3, 2]
+    - [12, 4, 3]
+    - [20000, 100, 200]
+
+ids:
+  ids_add:
+    - "ids_add1"
+    - "ids_add2"
+    - "ids_add3"
+  ids_sub:
+    - 'ids_sub1'
+    - 'ids_sub2'
+    - 'ids_sub3'
+  ids_mul:
+    - 'ids_mul1'
+    - 'ids_mul2'
+    - 'ids_mul3'
+  ids_div:
+    - 'ids-div1'
+    - 'ids-div2'
+    - 'ids-div3'
