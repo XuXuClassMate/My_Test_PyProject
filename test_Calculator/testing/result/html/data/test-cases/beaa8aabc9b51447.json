@@ -1,0 +1,98 @@
+{
+  "uid" : "beaa8aabc9b51447",
+  "name" : "test_sub[ids_sub1]",
+  "fullName" : "test_cal.Testcalc#test_sub",
+  "historyId" : "01ac68c784895a8845d715befc3858c8",
+  "time" : {
+    "start" : 1609746602545,
+    "stop" : 1609746602545,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Testcalc",
+    "time" : {
+      "start" : 1609746602534,
+      "stop" : 1609746602534,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Testcalc::0",
+    "time" : {
+      "start" : 1609746602583,
+      "stop" : 1609746602583,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试方法"
+  }, {
+    "name" : "story",
+    "value" : "测试减法"
+  }, {
+    "name" : "suite",
+    "value" : "test_cal"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testcalc"
+  }, {
+    "name" : "host",
+    "value" : "C02CJ58UMD6R"
+  }, {
+    "name" : "thread",
+    "value" : "46522-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "8"
+  }, {
+    "name" : "b",
+    "value" : "5"
+  }, {
+    "name" : "expect",
+    "value" : "3"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "beaa8aabc9b51447.json",
+  "parameterValues" : [ "8", "5", "3" ]
+}
