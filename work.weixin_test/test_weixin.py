@@ -1,18 +1,9 @@
 import json
 from time import sleep
+import test_cofig
 
-from selenium import webdriver
 
-
-class Test_weixin:
-    def setup(self):
-        self.driver = webdriver.Chrome()
-        self.driver.maximize_window()
-        self.driver.implicitly_wait(5)
-
-    def teardown(self):
-        self.driver.quit()
-
+class Test_weixin(test_cofig.base):
     def test_login(self):
         # 登录企业微信
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame#index')
@@ -37,8 +28,3 @@ class Test_weixin:
             json.dump(cookie, f)
 
         sleep(5)
-
-
-
-
-
