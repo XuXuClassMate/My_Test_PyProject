@@ -11,14 +11,12 @@ import yaml
 from test_Calculator.src.calculator import Calculator
 
 
-@allure.story('获取数据')
 def get_data():
-    with allure.step('解析data.yaml文件'):
-        with open('data.yml') as data_x:
-            datas = yaml.safe_load(data_x)
-            data_data = datas['datas']
-            data_name = datas['ids']
-            return [data_data, data_name]
+    with open('data.yml') as data_x:
+        data = yaml.safe_load(data_x)
+        data_data = data['datas']
+        data_name = data['ids']
+        return [data_data, data_name]
 
 
 data = get_data()
@@ -26,23 +24,28 @@ data = get_data()
 get_cal = Calculator()
 
 
+@pytest.mark.feature("测试方法")
 class Test_Calculator:
+    @pytest.mark.story('加法测试')
     @pytest.mark.run(order=0)
     @pytest.mark.usefixtures("prints")
     @pytest.mark.parametrize("a, b, result", data[0]['data_add'], ids=data[1]['ids_add'])
     def test_add(self, a, b, result):
         assert get_cal.add(a, b) == result
 
+    @pytest.mark.story('除法测试')
     @pytest.mark.run(order=3)
     @pytest.mark.parametrize("a, b, result", data[0]['data_div'], ids=data[1]['ids_div'])
     def test_div(self, a, b, result):
         assert get_cal.div(a, b) == result
 
+    @pytest.mark.story('减法测试')
     @pytest.mark.run(order=1)
     @pytest.mark.parametrize("a, b, result", data[0]['data_sub'], ids=data[1]['ids_sub'])
     def test_sub(self, a, b, result):
         assert get_cal.sub(a, b) == result
 
+    @pytest.mark.story('乘法测试')
     @pytest.mark.run(order=2)
     @pytest.mark.parametrize("a, b, result", data[0]['data_mul'], ids=data[1]['ids_mul'])
     def test_mul(self, a, b, result):
@@ -51,4 +54,3 @@ class Test_Calculator:
 
 if __name__ == '__main__':
     pytest.main('test_cal_plus.py', '-vs')
-
