@@ -9,7 +9,7 @@ class Test_mailbox(test_cofig.base):
         # self.driver.find_element_by_css_selector('#switchNormalCtrl').click()
         self.driver.switch_to.frame(0)
         self.driver.find_element_by_xpath('//input[@data-placeholder="邮箱帐号或手机号码"]').send_keys('13609394618')
-        self.driver.find_element_by_xpath('//input[@name="password"]').send_keys('97461853Yxp')
+        self.driver.find_element_by_xpath('//input[@name="password"]').send_keys('')
         print(self.driver.find_element_by_css_selector('#dologin').text)
         sleep(5)
 

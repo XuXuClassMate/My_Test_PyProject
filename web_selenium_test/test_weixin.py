@@ -1,6 +1,6 @@
 import json
 from time import sleep
-import test_cofig
+from web_selenium_test import test_cofig
 
 
 class Test_weixin(test_cofig.base):
