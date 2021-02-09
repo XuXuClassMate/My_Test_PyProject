@@ -15,5 +15,5 @@ class base:
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
 
-    def teardown(self):
-        self.driver.quit()
+    # def teardown(self):
+    #     self.driver.quit()

@@ -5,8 +5,9 @@ from web_selenium_test.Page.newsletter_page import NewsLetterPage
 
 
 class MainPage(BasePage):
-    def goto_add_section(self):
+    def goto_section(self):
         # 点击通讯录页面
         self.find(By.CSS_SELECTOR, '#menu_contacts').click()
+        self.driver.refresh()
         return NewsLetterPage(self.driver)
 

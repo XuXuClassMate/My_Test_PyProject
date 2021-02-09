@@ -1,6 +1,4 @@
 from selenium.webdriver.common.by import By
-import re
-
 from web_selenium_test.Page.Base_page import BasePage
 
 
@@ -21,14 +19,32 @@ class NewsLetterPage(BasePage):
         self.driver.refresh()
         return self
 
-    def get_list(self):
-        """
-        获取通讯录页面的信息
-        :return:
-        """
-        section = self.driver.find_elements(By.CSS_SELECTOR, '.jstree-container-ul a')
-        section_name = []
-        for name in section:
-            section_name.append(name.text)
+        # 修改部门名称
+    def update_section(self, new_name):
+        # 点击设置
+        self.find(By.CSS_SELECTOR, 'ul ul li').click()
+        self.find(By.CSS_SELECTOR, 'ul ul li span').click()
+        # 点击修改名称
+        self.find(By.XPATH, '//a[@rel="1"]').click()
+        # 重新命名
+        v1 = self.find(By.XPATH, '//input[@class="qui_inputText ww_inputText js_rename_input"and @name="name"]')
+        v1.clear()
+        v1.send_keys(new_name)
+        # 点击确认
+        self.find(By.CSS_SELECTOR, '[d_ck="submit"]').click()
+        # 页面刷新
+        self.driver.refresh()
+        return self
 
-        return section_name
+    def delete_section(self):
+        self.find(By.CSS_SELECTOR, 'ul ul li').click()
+        self.find(By.CSS_SELECTOR, 'ul ul li span').click()
+        # 点击删除
+        # self.find(By.XPATH, '/html/body/ul/li[7]/a').click()
+        self.find(By.XPATH, '//a[@rel="3"]').click()
+        self.find(By.XPATH, '//a[@d_ck="submit"]').click()
+        return self
+
+    def get_section_list(self):
+        # 获取部门的文本信息
+        return self.get_list(By.CSS_SELECTOR, '.jstree-container-ul a')

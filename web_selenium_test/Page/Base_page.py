@@ -43,7 +43,20 @@ class BasePage:
             json.dump(cookie, f)
 
     def find(self, by, locater):
+        # 元素定位
         return self.driver.find_element(by, locater)
 
-    def quit(self):
-        self.driver.quit()
+    def get_list(self, by, locater):
+        """
+        获取文本内容
+        :return:
+        """
+        section = self.driver.find_elements(by, locater)
+        section_name = []
+        for name in section:
+            section_name.append(name.text)
+
+        return section_name
+
+    def screenshot(self, name):
+        self.driver.save_screenshot(f'../test_case/photo/{name}.png')
