@@ -21,4 +21,4 @@ class BasePage:
             self.driver = webdriver.Remote("http://localhost:4723/wd/hub", phone_info)
             self.driver.implicitly_wait(10)
         else:
-            self.driver = driver
+            self.driver.launch_app()
