@@ -8,7 +8,7 @@ class Test_wuwork_api:
               "-Uyk8WCURTXE3sXhq6zGsFCg6Yx0BGlU"
         r = requests.get(url)
         res = r.json()
-        pytest.assume(res["errcode"] == 0
+        pytest.assume(res["errcode"] == 0)
         pytest.assume(res["access_token"] is not None)
         return res["access_token"]
 
