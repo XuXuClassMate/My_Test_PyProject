@@ -8,8 +8,10 @@ class Test_wuwork_api:
               "-Uyk8WCURTXE3sXhq6zGsFCg6Yx0BGlU"
         r = requests.get(url)
         res = r.json()
-        assert res["errcode"] == 0
-        assert res["access_token"] is not None
+        # assert res["errcode"] == 0
+        pytest.assume(res["errcode"] == 0)
+        # assert res["access_token"] is not None
+        pytest.assume(res["access_token"] is not None)
         return res["access_token"]
 
     data = {
@@ -23,7 +25,7 @@ class Test_wuwork_api:
         url = f"https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token={self.test_get_token()}"
         r = requests.post(url, json=self.data)
         res = r.json()
-        assert res['errmsg'] == "created"
+        pytest.assume(res['errmsg'] == "created")
 
     def test_update_muber(self):
         url = f"https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token={self.test_get_token()}"
@@ -32,14 +34,14 @@ class Test_wuwork_api:
             "name": "李四", }
         r = requests.post(url, json=update_data)
         res = r.json()
-        assert res['errmsg'] == "updated"
+        pytest.assume(res['errmsg'] == "updated")
         print(res)
 
     def test_delete_muber(self):
         url = f"https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token={self.test_get_token()}&userid={self.data['userid']}"
         r = requests.get(url)
         res = r.json()
-        assert res['errmsg'] == "deleted"
+        pytest.assume(res['errmsg'] == "deleted")
         print(res)
 
     if __name__ == '__main__':
