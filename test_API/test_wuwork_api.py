@@ -41,4 +41,4 @@ class Test_wuwork_api:
         pytest.assume(res['errmsg'] == "deleted")
 
     if __name__ == '__main__':
-        pytest.main(['-vs', 'test_wuwork_api.py'])
+        pytest.main(['-vs', 'test_wuwork_api_plus.py'])
