@@ -24,6 +24,25 @@ class TestBrowser:
     def teardown(self):
         self.driver.quit()
 
+    balck_list = [(By.XPATH, "//*[@class='classes']")]
+    def find(self, locator):
+        # 捕获异常（元素没找到）
+        try:
+            result = self.driver.find_element(*locator)
+            return result
+        except Exception as e:
+            # 遍历黑名单（弹窗）
+            for black in balck_list:
+                # 如果发现黑名单中的元素存在
+                eles = self.driver.find_elements(*black)
+                # 对黑名单进行处理
+                if len(eles) > 0:
+                    # 通过点击的方式，关闭弹窗
+                    eles[0].click()
+                    # 再次查找元素
+                    return self.find(locator)
+            raise e
+
     def test_browser(self):
         self.driver.get('http://m.baidu.com')
         # 下面的操作和selenium保持一致

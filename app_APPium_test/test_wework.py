@@ -61,3 +61,6 @@ class Test_wework:
                                                                ').text("保存").instance(0));').click()
         ele = self.driver.find_element(MobileBy.XPATH, '//*[@class="android.widget.Toast"]').text
         assert "添加成功" == ele
+        self.driver.get_screenshot_as_file('路径.png')
+        self.driver.start_recording_screen()
+        self.driver.stop_recording_screen()
