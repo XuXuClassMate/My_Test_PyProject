@@ -6,7 +6,7 @@
 
 ## 使用PageObject模式
   - [selenium+pytest应用](./web_selenium_test) 
-    - [代码存放](./web_selenium_test/)
+    - [代码存放](./web_selenium_test/Page)
     - [测试case存放](./web_selenium_test/test_case)
   - [Appium+pytest应用](./app_APPium_test)
     - [代码存放](./app_APPium_test/src)
