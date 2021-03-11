@@ -22,7 +22,6 @@ class Test_wuwork_api:
         self.log.echolog("查询成员返回json" + str(res))
         pytest.assume(res["errcode"] == 60111)
         self.log.echolog("查询成员完成")
-        print(res)
 
         # 创建成员
         res = self.address.add_member(userid="zhangsan", name="张三", mobile="+86 13800000002", department=[1])
