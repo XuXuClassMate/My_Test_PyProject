@@ -20,9 +20,9 @@
 
 ## 性能测试
   - [使用Locust+python分布式性能测试](./Performance_Test/wuwork_test.py)
-    ![image](./Performance_Test/Test_Results/number_of_users_1615213371.png)
     ![image](./Performance_Test/Test_Results/response_times_(ms)_1615213371.png)
     ![image](./Performance_Test/Test_Results/total_requests_per_second_1615213371.png)
+    ![image](./Performance_Test/Test_Results/number_of_users_1615213371.png)
     
 
 
