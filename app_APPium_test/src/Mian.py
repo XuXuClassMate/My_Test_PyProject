@@ -5,5 +5,6 @@ from app_APPium_test.src.BasePage import BasePage
 
 class Main(BasePage):
     def go_to_Address_book(self):  # 进入通讯录
-        self.driver.find_element(MobileBy.XPATH, '//*[@text="通讯录"]').click()
+        # self.driver.find_element(MobileBy.XPATH, '//*[@text="通讯录"]').click()
+        self.find(MobileBy.XPATH, '//*[@text="通讯录"]')
         return Address_book(self.driver)

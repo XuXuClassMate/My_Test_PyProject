@@ -1,5 +1,6 @@
 from appium import webdriver
 from appium.webdriver.webdriver import WebDriver
+from app_APPium_test.src.blacklist_handle import balck_handle
 
 phone_info = {
     "platformName": "android",
@@ -22,3 +23,13 @@ class BasePage:
             self.driver.implicitly_wait(10)
         else:
             self.driver.launch_app()
+
+    @balck_handle
+    def find(self, by, locater):
+        return self.driver.find_element(by, locater)
+
+    def click(self, by, locater):
+        return self.driver.find_element(by, locater).click()
+
+    def text(self, by, locater):
+        return self.driver.find_element(by, locater).text()
