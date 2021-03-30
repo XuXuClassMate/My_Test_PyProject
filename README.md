@@ -24,8 +24,3 @@
     ![image](./Performance_Test/Test_Results/total_requests_per_second_1615213371.png)
     ![image](./Performance_Test/Test_Results/number_of_users_1615213371.png)
     
-
-
-    
-
-
