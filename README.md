@@ -1,5 +1,5 @@
 ## _我的测试项目_
-
+###unittest
 - [我的代码存放](./test_game/src)
 - [我的case存放](./test_game/testing)
 - [pytest框架应用](./test_Calculator)
@@ -14,6 +14,9 @@
   - [APi+pytest](./test_API)
     - [代码存放](./test_API/src)
     - [测试case存放](./test_API/testing/test_wuwork_api_plus.py)
+    
+###Jnekins practice
+- [jenkins_webui_test](./Jenkins_test/jenkins_webui_test)
 
 ## 接口测试
   - [使用mitmdump,API_Mock](/test_API/API_MOCK/api_mock.py)
