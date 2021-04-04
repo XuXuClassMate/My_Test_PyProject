@@ -18,7 +18,7 @@ class Api:
         "default": "dev",
         "testing-studio": {
             "dev": "127.0.0.1",
-            "test": "127.0.0.2"
+            "test_case_webui": "127.0.0.2"
         }
     }
 

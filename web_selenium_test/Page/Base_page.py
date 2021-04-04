@@ -20,7 +20,7 @@ class BasePage:
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame')
         # 读取cookie
         try:
-            with open('/Users/bytedance/Desktop/我的/PythonProject/My_Test_Project/web_selenium_test/cookie.json',
+            with open('/Users/bytedance/Desktop/My/PythonProject/My_Test_Project/web_selenium_test/cookie.json',
                       'r') as f:
                 cookies = json.load(f)
             for cookie in cookies:
@@ -38,7 +38,7 @@ class BasePage:
         # 获取页面cookie
         cookie = self.driver.get_cookies()
         # 写入/更新cookie
-        with open('/Users/bytedance/Desktop/我的/PythonProject/My_Test_Project/web_selenium_test/cookie.json', 'w') as f:
+        with open('/Users/bytedance/Desktop/My/PythonProject/My_Test_Project/web_selenium_test/cookie.json', 'w') as f:
             json.dump(cookie, f)
 
     def find(self, by, locater):

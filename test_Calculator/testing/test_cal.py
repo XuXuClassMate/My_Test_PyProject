@@ -6,7 +6,7 @@ from test_Calculator.src.calculator import Calculator
 
 
 def get_datas():
-    with open('/Users/bytedance/Desktop/我的/PythonProject/My_Test_Project/'
+    with open('/Users/bytedance/Desktop/My/PythonProject/My_Test_Project/'
               'test_Calculator/testing/data.yml') as data_x:
         datas = yaml.safe_load(data_x)
         data = datas['datas']

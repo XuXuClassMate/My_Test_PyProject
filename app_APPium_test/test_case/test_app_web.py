@@ -16,7 +16,7 @@ class TestBrowser:
             "skipDeviceInitialization": "true",
             "resetKeyBoard": "true",
             "waitFoeIdleTimeout": 0,
-            "chromedriverExecutable": "/Users/bytedance/Desktop/我的/APPium/android-webview/chromedriver"
+            "chromedriverExecutable": "/Users/bytedance/Desktop/My/APPium/android-webview/chromedriver"
         }
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", phone_info)
         self.driver.implicitly_wait(10)
