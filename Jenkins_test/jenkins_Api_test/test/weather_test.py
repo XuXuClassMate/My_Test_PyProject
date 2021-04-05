@@ -1,7 +1,7 @@
 import allure
 
 from unittest import TestCase
-from library.httpclient import HttpClient
+from ..library.httpclient import HttpClient
 
 
 @allure.feature('Test Weather api')
