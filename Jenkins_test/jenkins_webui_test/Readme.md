@@ -10,4 +10,6 @@
 - 填入设备的chromedriver文件的全路径
 
 运行命令：
-pytest -sv test/web_ut.py --allured ./allure-results
+pytest -sv test/web_ut.py --alluredir ./allure-results
+
+
