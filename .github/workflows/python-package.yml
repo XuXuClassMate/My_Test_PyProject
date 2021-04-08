@@ -9,9 +9,9 @@ on:
     paths:
       - /test_Calculator
 
-  release:
-#    Run hook：创建、编辑、删除时
-    types: [created,edited,deleted]
+#   release:
+# #    Run hook：创建、编辑、删除时
+#     types: [created,edited,deleted]
 
 
 jobs:
