@@ -42,5 +42,6 @@ jobs:
         cd testing
         echo $PATH
         pytest test_cal_plus.py -vs
+        echo 测试完成
 
 
