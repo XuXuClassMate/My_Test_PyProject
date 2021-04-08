@@ -31,14 +31,16 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
-      run: |
-#        python -m pip install --upgrade pip
+      run:
          pip install -r requirements.txt
     - name: Run Tests
       run: |
         echo hello🤔
+
         echo 开始测试
         echo $PATH
         cd testing
         echo $PATH
         pytest test_cal_plus.py -vs
+
+
