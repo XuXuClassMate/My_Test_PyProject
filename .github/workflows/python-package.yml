@@ -29,3 +29,9 @@ jobs:
       run: |
         # python manage.py test
         echo hello🤔
+        echo $PATH
+        python --version
+        pip3 list
+        docker version
+        git version
+        
