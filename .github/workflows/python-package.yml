@@ -43,5 +43,9 @@ jobs:
         echo $PATH
         pytest test_cal_plus.py -vs
         echo 测试完成
+        
+        
+        echo hello🤔
+        
 
 
