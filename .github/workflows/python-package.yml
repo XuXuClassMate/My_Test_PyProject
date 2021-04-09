@@ -2,9 +2,9 @@ name: Python package
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ main ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -36,6 +36,7 @@ jobs:
         pytest
         echo 开始测试
         echo $PATH
+        pip3 --version
         cd test_Calculator
         echo $PATH
         pip3 install -r requirements.txt
@@ -43,8 +44,6 @@ jobs:
         pytest test_cal_plus.py -vs
         echo 测试完成
         echo Bye😝
-        echo yaml version
-        echo pytest version
         
 
 
