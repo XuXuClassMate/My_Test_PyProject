@@ -12,7 +12,7 @@ from test_Calculator.src.calculator import Calculator
 
 
 def get_data():
-    with open('data.yml') as data_x:
+    with open('./data.yml') as data_x:
         data = yaml.safe_load(data_x)
         data_data = data['datas']
         data_name = data['ids']
@@ -20,6 +20,8 @@ def get_data():
 
 
 data = get_data()
+# print(data)
+# print(data[0]['data_add'], data[1]['ids_add'])
 
 get_cal = Calculator()
 
