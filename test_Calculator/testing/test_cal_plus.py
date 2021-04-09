@@ -20,8 +20,6 @@ def get_data():
 
 
 data = get_data()
-# print(data)
-# print(data[0]['data_add'], data[1]['ids_add'])
 
 get_cal = Calculator()
 
