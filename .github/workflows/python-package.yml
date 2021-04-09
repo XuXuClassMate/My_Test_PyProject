@@ -6,8 +6,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - /test_Calculator
+#     paths:
+#       - /test_Calculator
 
 #   release:
 # #    Run hook：创建、编辑、删除时
@@ -41,7 +41,7 @@ jobs:
         echo $PATH
         cd testing
         echo $PATH
-        pytest test_cal_plus.py -vs
+        pytest /test_Calculator/test_cal_plus.py -vs
         echo 测试完成
         
         
