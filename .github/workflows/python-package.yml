@@ -20,11 +20,11 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-#    - name: Install dependencies
-#      run: |
-#        python -m pip install --upgrade pip
-#        python -m pip install flake8 pytest
-#        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 #    - name: Lint with flake8
 #      run: |
 #        # stop the build if there are Python syntax errors or undefined names
@@ -39,6 +39,7 @@ jobs:
         pip3 --version
         cd test_Calculator
         echo $PATH
+        pip3 install -U pytest
         pip3 install -r requirements.txt
         cd testing
         pytest test_cal_plus.py -vs
