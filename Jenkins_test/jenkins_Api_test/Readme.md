@@ -11,3 +11,7 @@ pip install allure-pytest
 运行命令：
 pytest -sv test/weather_test.py --alluredir ./allure-results
 
+ #### jenkins自动化测试结果
+  - [执行日志](./Jenkins_test/jenkins_Api_test/email_log/build.log)
+  - [执行结束已发送邮件](./Jenkins_test/jenkins_Api_test/email_log/Jenkins构建提示：0412newjob%20-%20Build%20%23%201%20-%20Successful!.eml)
+

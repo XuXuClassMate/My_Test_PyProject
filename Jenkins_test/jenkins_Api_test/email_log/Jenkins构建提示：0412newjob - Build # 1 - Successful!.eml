@@ -1,0 +1,1137 @@
+Received: from 192.168.1.103 (unknown [49.7.44.161])
+	by smtp12 (Coremail) with SMTP id EMCowAAXHys0pXVgbgqmlQ--.45551S2;
+	Tue, 13 Apr 2021 22:05:40 +0800 (CST)
+Date: Tue, 13 Apr 2021 22:05:39 +0800 (CST)
+From: 13609394618@163.com
+To: 2570129238@qq.com, yanxuping@bytedance.com
+Message-ID: <1804879115.5.1618322740575@[192.168.1.103]>
+Subject: =?UTF-8?Q?Jenkins=E6=9E=84=E5=BB=BA=E6=8F=90=E7=A4=BA=EF=BC=9A?=
+ =?UTF-8?Q?0412newjob_-?= =?UTF-8?Q?_Build_#_21_-_Successful!?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4_612051339.1618322739945"
+X-Jenkins-Job: 0412newjob
+X-Jenkins-Result: SUCCESS
+List-ID: 
+X-CM-TRANSID:EMCowAAXHys0pXVgbgqmlQ--.45551S2
+X-Coremail-Antispam: 1Uf129KBjvAXoW3tw15tFWrtr13tF4DJr4ktFb_yoW8AFy5Jo
+	Wj9w1j93WUJwn8Wr4DJF95Ca1kXwsrtayFqr929wn8ua1SqFnayFy5J3W5ta9rtrW0kas8
+	J3Z7twn2qryvqFZ7n29KB7ZKAUJUUUUU529EdanIXcx71UUUUU7v73VFW2AGmfu7bjvjm3
+	AaLaJ3UbIYCTnIWIevJa73UjIFyTuYvjxUssqWUUUUU
+X-Originating-IP: [49.7.44.161]
+
+------=_Part_4_612051339.1618322739945
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"UTF-8">
+<title>0412newjob-=E7=AC=AC21=E6=AC=A1=E6=9E=84=E5=BB=BA=E6=97=A5=E5=BF=97<=
+/title>
+</head>
+=20
+<body leftmargin=3D"8" marginwidth=3D"0" topmargin=3D"8" marginheight=3D"4"
+    offset=3D"0">
+    <table width=3D"95%" cellpadding=3D"0" cellspacing=3D"0"
+        style=3D"font-size: 11pt; font-family: Tahoma, Arial, Helvetica, sa=
+ns-serif">
+        <tr>
+            <td>(=E6=9C=AC=E9=82=AE=E4=BB=B6=E6=98=AFJenkins=E7=A8=8B=E5=BA=
+=8F=E8=87=AA=E5=8A=A8=E4=B8=8B=E5=8F=91=E7=9A=84=EF=BC=8C=E8=AF=B7=E5=8B=BF=
+=E5=9B=9E=E5=A4=8D=EF=BC=81)</td>
+        </tr>
+        <tr>
+            <td><h2><font color=3D"#0000FF">=E6=9E=84=E5=BB=BA=E7=BB=93=E6=
+=9E=9C - Successful</font></h2></td>
+        </tr>
+        <tr>
+            <td><br />
+            <b><font color=3D"#0B610B">=E6=9E=84=E5=BB=BA=E4=BF=A1=E6=81=AF=
+=EF=BC=9A</font></b><hr size=3D"2" width=3D"100%" align=3D"center" /></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>=E9=A1=B9=E7=9B=AE=E5=90=8D=E7=A7=B0=EF=BC=9A0412ne=
+wjob</li>
+                    <li>=E6=9E=84=E5=BB=BA=E7=BC=96=E5=8F=B7=EF=BC=9A=E7=AC=
+=AC21=E6=AC=A1=E6=9E=84=E5=BB=BA</li>
+                    <!--
+                    <li>SVN =E7=89=88=E6=9C=AC=EF=BC=9A ${SVN_REVISION}</li=
+>
+                    -->
+                    <li>=E8=A7=A6=E5=8F=91=E5=8E=9F=E5=9B=A0=EF=BC=9AStarte=
+d by user yanxuping</li>
+                    <li>=E6=9E=84=E5=BB=BA=E6=97=A5=E5=BF=97=EF=BC=9A<a hre=
+f=3D"http://192.168.1.103:8080/job/0412newjob/21/console">http://192.168.1.=
+103:8080/job/0412newjob/21/console</a></li>
+                    <li>=E6=9E=84=E5=BB=BA=E5=9C=B0=E5=9D=80=EF=BC=9A<a hre=
+f=3D"http://192.168.1.103:8080/job/0412newjob/21/">http://192.168.1.103:808=
+0/job/0412newjob/21/</a></li>
+                    <li>=E5=B7=A5=E4=BD=9C=E7=9B=AE=E5=BD=95=EF=BC=9A<a hre=
+f=3D"http://192.168.1.103:8080/job/0412newjob/ws">http://192.168.1.103:8080=
+/job/0412newjob/ws</a></li>
+                    <li>=E9=A1=B9=E7=9B=AE=E5=9C=B0=E5=9D=80=EF=BC=9A<a hre=
+f=3D"http://192.168.1.103:8080/job/0412newjob/">http://192.168.1.103:8080/j=
+ob/0412newjob/</a></li>
+                    <li>=E5=8F=98=E6=9B=B4=E9=9B=86=EF=BC=9A<STYLE>
+BODY, TABLE, TD, TH, P {
+  font-family:Verdana,Helvetica,sans serif;
+  font-size:11px;
+  color:black;
+}
+h1 { color:black; }
+h2 { color:black; }
+h3 { color:black; }
+TD.bg1 { color:white; background-color:#0000C0; font-size:120% }
+TD.bg2 { color:white; background-color:#4040FF; font-size:110% }
+TD.bg3 { color:white; background-color:#8080FF; }
+TD.test_passed { color:blue; }
+TD.test_failed { color:red; }
+TD.console { font-family:Courier New; }
+</STYLE><BODY><TABLE><TR><TD align=3D"right"><IMG SRC=3D"http://192.168.1.1=
+03:8080/static/e59dfe28/images/32x32/blue.gif"></IMG></TD><TD valign=3D"cen=
+ter"><B style=3D"font-size: 200%;">BUILD SUCCESS</B></TD></TR><TR><TD>Build=
+ URL</TD><TD><A href=3D"http://192.168.1.103:8080/job/0412newjob/21/">http:=
+//192.168.1.103:8080/job/0412newjob/21/</A></TD></TR><TR><TD>Project:</TD><=
+TD>0412newjob</TD></TR><TR><TD>Date of build:</TD><TD>Tue, 13 Apr 2021 22:0=
+5:30 +0800</TD></TR><TR><TD>Build duration:</TD><TD>9.5 sec</TD></TR></TABL=
+E><BR></BR><TABLE width=3D"100%"><TR><TD class=3D"bg1" colspan=3D"2"><B>CHA=
+NGES</B></TD></TR><TR><TD colspan=3D"2">No Changes</TD></TR></TABLE><BR></B=
+R><TABLE width=3D"100%"><TR><TD class=3D"bg1"><B>BUILD ARTIFACTS</B></TD></=
+TR><TR><TD><li><a href=3D"http://192.168.1.103:8080/job/0412newjob/21/artif=
+act/allure-report.zip">allure-report.zip</a></li></TD></TR></TABLE><BR></BR=
+></BODY></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><b><font color=3D"#0B610B">Changes Since Last Successful Bu=
+ild:</font></b><hr size=3D"2" width=3D"100%" align=3D"center" /></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>=E5=8E=86=E5=8F=B2=E5=8F=98=E6=9B=B4=E8=AE=B0=E5=BD=
+=95 : <a href=3D"http://192.168.1.103:8080/job/0412newjob/changes">http://1=
+92.168.1.103:8080/job/0412newjob/changes</a></li>
+                </ul> Changes for Build #21:<br />No changes
+<br />
+            </td>
+        </tr>
+        <tr>
+            <td><b><font color=3D"#0B610B">Failed Test Results=EF=BC=9A</fo=
+nt></b><hr size=3D"2" width=3D"100%" align=3D"center" /></td>
+        </tr>
+        <tr>
+            <td><pre style=3D"font-size: 11pt; font-family: Tahoma, Arial, =
+Helvetica, sans-serif">No tests ran.</pre>
+                <br /></td>
+        </tr>
+        <!--
+        <tr>
+            <td><b><font color=3D"#0B610B">=E6=9E=84=E5=BB=BA=E6=97=A5=E5=
+=BF=97 (=E6=9C=80=E5=90=8E 100=E8=A1=8C):</font></b>
+            <hr size=3D"2" width=3D"100%" align=3D"center" /></td>
+        </tr>
+        <tr>
+            <td>Test Logs (if test has ran): <a
+                href=3D"http://192.168.1.103:8080/job/0412newjob/ws/TestRes=
+ult/archive_logs/Log-Build-21.zip">http://192.168.1.103:8080/job/0412newjob=
+//ws/TestResult/archive_logs/Log-Build-21.zip</a>
+                <br />
+            <br />
+            </td>
+        </tr>
+        <tr>
+            <td><textarea cols=3D"80" rows=3D"30" readonly=3D"readonly"
+                    style=3D"font-family: Courier New">[...truncated 291 B.=
+..]
+Building in workspace /Users/bytedance/.jenkins/workspace/0412newjob
+The recommended git tool is: NONE
+using credential jenkins_git_ID
+ > git rev-parse --resolve-git-dir /Users/bytedance/.jenkins/workspace/0412=
+newjob/My_Test_Project/.git # timeout=3D10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yanxuping/My_Test_Project.gi=
+t # timeout=3D10
+Fetching upstream changes from git@github.com:yanxuping/My_Test_Project.git
+ > git --version # timeout=3D10
+ > git --version # 'git version 2.24.3 (Apple Git-128)'
+using GIT_ASKPASS to set credentials jenkins_git_ID
+ > git fetch --tags --force --progress -- git@github.com:yanxuping/My_Test_=
+Project.git +refs/heads/*:refs/remotes/origin/* # timeout=3D10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=3D10
+Checking out Revision 3038658f05a1321188292f379299fac275cdd9a9 (refs/remote=
+s/origin/main)
+ > git config core.sparsecheckout # timeout=3D10
+ > git checkout -f 3038658f05a1321188292f379299fac275cdd9a9 # timeout=3D10
+Commit message: "Update requirements.txt"
+ > git rev-list --no-walk 3038658f05a1321188292f379299fac275cdd9a9 # timeou=
+t=3D10
+Checking for pre-build
+Executing pre-build step
+Checking if email needs to be generated
+No emails were triggered.
+[0412newjob] $ /bin/sh -xe /var/folders/sg/hvzkbxpn4q1530qj3k53rhx80000gn/T=
+/jenkins9153059694318700455.sh
++ source /Users/bytedance/.zshrc
+++ JAVA_HOME=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/=
+Home
+++ PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/=
+bin:/usr/bin:/bin:/usr/sbin:/sbin:.
+++ CLASSPATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/=
+Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/lib/dt.jar:.
+++ ANDROID_HOME=3D$'/Users/bytedance/Desktop/\346\210\221\347\232\204//APPi=
+um/android-sdk-macosx'
+++ export JAVA_HOME
+++ export ANDROID_HOME
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools'
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools'
+++ export PATH
+++ export CLASSPATH
+++ GOROOT=3D/usr/local/Cellar/go/1.15.3/libexec
+++ export GOROOT
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/=
+local/Cellar/go/1.15.3/libexec/bin'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/C=
+ellar/go/1.15.3/libexec/bin'
+++ export GOPATH=3D/Users/bytedance/go
+++ GOPATH=3D/Users/bytedance/go
+++ export GOBIN=3D/Users/bytedance/go/bin
+++ GOBIN=3D/Users/bytedance/go/bin
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/=
+local/Cellar/go/1.15.3/libexec/bin:/Users/bytedance/go/bin'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/C=
+ellar/go/1.15.3/libexec/bin:/Users/bytedance/go/bin'
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/loc=
+al/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/puppetlabs/bin:=
+/usr/local/munki:/opt/X11/bin:.:/Users/bytedance/Desktop/\346\210\221\347\2=
+32\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346\210\2=
+21\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/Cellar/=
+go/1.15.3/libexec/bin:/Users/bytedanc'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:=
+/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/puppetlabs/bin:/usr/lo=
+cal/munki:/opt/X11/bin:.:/Users/bytedance/Desktop/\346\210\221\347\232\204/=
+/APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346\210\221\347\=
+232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/Cellar/go/1.15=
+.3/libexec/bin:/Users/bytedanc'
++ cd My_Test_Project/Jenkins_test/jenkins_Api_test
++ pip3 install -r requirements.txt
+Requirement already satisfied: allure-pytest=3D=3D2.8.18 in /Library/Framew=
+orks/Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r req=
+uirements.txt (line 1)) (2.8.18)
+Requirement already satisfied: pytest=3D=3D5.4.3 in /Library/Frameworks/Pyt=
+hon.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirement=
+s.txt (line 2)) (5.4.3)
+Requirement already satisfied: pytest-testconfig in /Library/Frameworks/Pyt=
+hon.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirement=
+s.txt (line 3)) (0.2.0)
+Requirement already satisfied: requests=3D=3D2.24.0 in /Library/Frameworks/=
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirem=
+ents.txt (line 4)) (2.24.0)
+Requirement already satisfied: urllib3=3D=3D1.25.11 in /Library/Frameworks/=
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirem=
+ents.txt (line 5)) (1.25.11)
+Requirement already satisfied: allure-python-commons=3D=3D2.8.18 in /Librar=
+y/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages (fro=
+m allure-pytest=3D=3D2.8.18->-r requirements.txt (line 1)) (2.8.18)
+Requirement already satisfied: six>=3D1.9.0 in /Library/Frameworks/Python.f=
+ramework/Versions/3.9/lib/python3.9/site-packages (from allure-pytest=3D=3D=
+2.8.18->-r requirements.txt (line 1)) (1.15.0)
+Requirement already satisfied: attrs>=3D17.4.0 in /Library/Frameworks/Pytho=
+n.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.=
+3->-r requirements.txt (line 2)) (20.2.0)
+Requirement already satisfied: pluggy<1.0,>=3D0.12 in /Library/Frameworks/P=
+ython.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D=
+5.4.3->-r requirements.txt (line 2)) (0.13.1)
+Requirement already satisfied: more-itertools>=3D4.0.0 in /Library/Framewor=
+ks/Python.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=
+=3D=3D5.4.3->-r requirements.txt (line 2)) (8.7.0)
+Requirement already satisfied: packaging in /Library/Frameworks/Python.fram=
+ework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.3->-r =
+requirements.txt (line 2)) (20.4)
+Requirement already satisfied: wcwidth in /Library/Frameworks/Python.framew=
+ork/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.3->-r re=
+quirements.txt (line 2)) (0.2.5)
+Requirement already satisfied: py>=3D1.5.0 in /Library/Frameworks/Python.fr=
+amework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.3->-=
+r requirements.txt (line 2)) (1.9.0)
+Requirement already satisfied: idna<3,>=3D2.5 in /Library/Frameworks/Python=
+.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D=3D2.2=
+4.0->-r requirements.txt (line 4)) (2.10)
+Requirement already satisfied: certifi>=3D2017.4.17 in /Library/Frameworks/=
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D=
+=3D2.24.0->-r requirements.txt (line 4)) (2020.6.20)
+Requirement already satisfied: chardet<4,>=3D3.0.2 in /Library/Frameworks/P=
+ython.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D=
+=3D2.24.0->-r requirements.txt (line 4)) (3.0.4)
+Requirement already satisfied: pyyaml in /Library/Frameworks/Python.framewo=
+rk/Versions/3.9/lib/python3.9/site-packages (from pytest-testconfig->-r req=
+uirements.txt (line 3)) (5.3.1)
+Requirement already satisfied: pyparsing>=3D2.0.2 in /Library/Frameworks/Py=
+thon.framework/Versions/3.9/lib/python3.9/site-packages (from packaging->py=
+test=3D=3D5.4.3->-r requirements.txt (line 2)) (2.4.7)
++ pytest -sv test/weather_test.py --alluredir ./allure-results
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D test session starts =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+platform darwin -- Python 3.9.0, pytest-5.4.3, py-1.9.0, pluggy-0.13.1 -- /=
+Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.0', 'Platform': 'macOS-10.16-x86_64-i386-64bit', =
+'Packages': {'pytest': '5.4.3', 'py': '1.9.0', 'pluggy': '0.13.1'}, 'Plugin=
+s': {'assume': '2.4.2', 'metadata': '1.10.0', 'rerunfailures': '9.1.1', 'al=
+lure-pytest': '2.8.18', 'testconfig': '0.2.0', 'html': '2.1.1'}, 'CI': 'tru=
+e', 'BUILD_NUMBER': '21', 'BUILD_ID': '21', 'BUILD_URL': 'http://192.168.1.=
+103:8080/job/0412newjob/21/', 'NODE_NAME': 'master', 'JOB_NAME': '0412newjo=
+b', 'BUILD_TAG': 'jenkins-0412newjob-21', 'EXECUTOR_NUMBER': '0', 'JENKINS_=
+URL': 'http://192.168.1.103:8080/', 'JAVA_HOME': '/Library/Java/JavaVirtual=
+Machines/jdk1.8.0_251.jdk/Contents/Home', 'WORKSPACE': '/Users/bytedance/.j=
+enkins/workspace/0412newjob', 'GIT_COMMIT': '3038658f05a1321188292f379299fa=
+c275cdd9a9', 'GIT_URL': 'git@github.com:yanxuping/My_Test_Project.git', 'GI=
+T_BRANCH': 'origin/main'}
+rootdir: /Users/bytedance/.jenkins/workspace/0412newjob/My_Test_Project/Jen=
+kins_test/jenkins_Api_test
+plugins: assume-2.4.2, metadata-1.10.0, rerunfailures-9.1.1, allure-pytest-=
+2.8.18, testconfig-0.2.0, html-2.1.1
+collecting ... collected 3 items
+
+test/weather_test.py::Weather::test_1 {'weatherinfo': {'city': '=E6=B7=B1=
+=E5=9C=B3', 'cityid': '101280601', 'temp1': '24=E2=84=83', 'temp2': '30=E2=
+=84=83', 'weather': '=E9=98=B5=E9=9B=A8=E8=BD=AC=E5=A4=A7=E9=9B=A8', 'img1'=
+: 'n3.gif', 'img2': 'd9.gif', 'ptime': '18:00'}}
+Expect city =3D =E6=B7=B1=E5=9C=B3, while actual city =3D =E6=B7=B1=E5=9C=
+=B3
+PASSED
+test/weather_test.py::Weather::test_2 {'weatherinfo': {'city': '=E5=8C=97=
+=E4=BA=AC', 'cityid': '101010100', 'temp1': '18=E2=84=83', 'temp2': '31=E2=
+=84=83', 'weather': '=E5=A4=9A=E4=BA=91=E8=BD=AC=E9=98=B4', 'img1': 'n1.gif=
+', 'img2': 'd2.gif', 'ptime': '18:00'}}
+Expect city =3D =E5=8C=97=E4=BA=AC, while actual city =3D =E5=8C=97=E4=BA=
+=AC
+PASSED
+test/weather_test.py::Weather::test_3 {'weatherinfo': {'city': '=E4=B8=8A=
+=E6=B5=B7', 'cityid': '101020100', 'temp1': '19=E2=84=83', 'temp2': '23=E2=
+=84=83', 'weather': '=E5=A4=A7=E9=9B=A8=E8=BD=AC=E4=B8=AD=E9=9B=A8', 'img1'=
+: 'n9.gif', 'img2': 'd8.gif', 'ptime': '18:00'}}
+Expect city =3D =E4=B8=8A=E6=B5=B7, while actual city =3D =E4=B8=8A=E6=B5=
+=B7
+PASSED
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D 3 passed in 0.51s =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+[0412newjob] $ /Users/bytedance/.jenkins/tools/ru.yandex.qatools.allure.jen=
+kins.tools.AllureCommandlineInstallation/Allure/bin/allure generate -c -o /=
+Users/bytedance/.jenkins/workspace/0412newjob/allure-report
+allure-results does not exist
+Report successfully generated to /Users/bytedance/.jenkins/workspace/0412ne=
+wjob/allure-report
+Allure report was successfully generated.
+Creating artifact for the build.
+Artifact was added to the build.
+Checking for post-build
+Performing post-build step
+Checking if email needs to be generated
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending mail from default account using System Admin e-mail address
+</textarea>
+            </td>
+        </tr>
+        -->
+    </table>
+</body>
+</html>
+------=_Part_4_612051339.1618322739945
+Content-Type: text/plain; charset=UTF-8; name=build.log
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment; filename=build.log
+
+Started by user yanxuping
+Running as SYSTEM
+Building in workspace /Users/bytedance/.jenkins/workspace/0412newjob
+The recommended git tool is: NONE
+using credential jenkins_git_ID
+ > git rev-parse --resolve-git-dir /Users/bytedance/.jenkins/workspace/0412=
+newjob/My_Test_Project/.git # timeout=3D10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yanxuping/My_Test_Project.gi=
+t # timeout=3D10
+Fetching upstream changes from git@github.com:yanxuping/My_Test_Project.git
+ > git --version # timeout=3D10
+ > git --version # 'git version 2.24.3 (Apple Git-128)'
+using GIT_ASKPASS to set credentials jenkins_git_ID
+ > git fetch --tags --force --progress -- git@github.com:yanxuping/My_Test_=
+Project.git +refs/heads/*:refs/remotes/origin/* # timeout=3D10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=3D10
+Checking out Revision 3038658f05a1321188292f379299fac275cdd9a9 (refs/remote=
+s/origin/main)
+ > git config core.sparsecheckout # timeout=3D10
+ > git checkout -f 3038658f05a1321188292f379299fac275cdd9a9 # timeout=3D10
+Commit message: "Update requirements.txt"
+ > git rev-list --no-walk 3038658f05a1321188292f379299fac275cdd9a9 # timeou=
+t=3D10
+Checking for pre-build
+Executing pre-build step
+Checking if email needs to be generated
+No emails were triggered.
+[0412newjob] $ /bin/sh -xe /var/folders/sg/hvzkbxpn4q1530qj3k53rhx80000gn/T=
+/jenkins9153059694318700455.sh
++ source /Users/bytedance/.zshrc
+++ JAVA_HOME=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/=
+Home
+++ PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/=
+bin:/usr/bin:/bin:/usr/sbin:/sbin:.
+++ CLASSPATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/=
+Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/lib/dt.jar:.
+++ ANDROID_HOME=3D$'/Users/bytedance/Desktop/\346\210\221\347\232\204//APPi=
+um/android-sdk-macosx'
+++ export JAVA_HOME
+++ export ANDROID_HOME
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools'
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools'
+++ export PATH
+++ export CLASSPATH
+++ GOROOT=3D/usr/local/Cellar/go/1.15.3/libexec
+++ export GOROOT
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/=
+local/Cellar/go/1.15.3/libexec/bin'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/C=
+ellar/go/1.15.3/libexec/bin'
+++ export GOPATH=3D/Users/bytedance/go
+++ GOPATH=3D/Users/bytedance/go
+++ export GOBIN=3D/Users/bytedance/go/bin
+++ GOBIN=3D/Users/bytedance/go/bin
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/=
+local/Cellar/go/1.15.3/libexec/bin:/Users/bytedance/go/bin'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/C=
+ellar/go/1.15.3/libexec/bin:/Users/bytedance/go/bin'
+++ export $'PATH=3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+nts/Home/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/loc=
+al/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/puppetlabs/bin:=
+/usr/local/munki:/opt/X11/bin:.:/Users/bytedance/Desktop/\346\210\221\347\2=
+32\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346\210\2=
+21\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/Cellar/=
+go/1.15.3/libexec/bin:/Users/bytedanc'
+++ PATH=3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:=
+/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/puppetlabs/bin:/usr/lo=
+cal/munki:/opt/X11/bin:.:/Users/bytedance/Desktop/\346\210\221\347\232\204/=
+/APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346\210\221\347\=
+232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/Cellar/go/1.15=
+.3/libexec/bin:/Users/bytedanc'
++ cd My_Test_Project/Jenkins_test/jenkins_Api_test
++ pip3 install -r requirements.txt
+Requirement already satisfied: allure-pytest=3D=3D2.8.18 in /Library/Framew=
+orks/Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r req=
+uirements.txt (line 1)) (2.8.18)
+Requirement already satisfied: pytest=3D=3D5.4.3 in /Library/Frameworks/Pyt=
+hon.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirement=
+s.txt (line 2)) (5.4.3)
+Requirement already satisfied: pytest-testconfig in /Library/Frameworks/Pyt=
+hon.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirement=
+s.txt (line 3)) (0.2.0)
+Requirement already satisfied: requests=3D=3D2.24.0 in /Library/Frameworks/=
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirem=
+ents.txt (line 4)) (2.24.0)
+Requirement already satisfied: urllib3=3D=3D1.25.11 in /Library/Frameworks/=
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirem=
+ents.txt (line 5)) (1.25.11)
+Requirement already satisfied: allure-python-commons=3D=3D2.8.18 in /Librar=
+y/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages (fro=
+m allure-pytest=3D=3D2.8.18->-r requirements.txt (line 1)) (2.8.18)
+Requirement already satisfied: six>=3D1.9.0 in /Library/Frameworks/Python.f=
+ramework/Versions/3.9/lib/python3.9/site-packages (from allure-pytest=3D=3D=
+2.8.18->-r requirements.txt (line 1)) (1.15.0)
+Requirement already satisfied: attrs>=3D17.4.0 in /Library/Frameworks/Pytho=
+n.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.=
+3->-r requirements.txt (line 2)) (20.2.0)
+Requirement already satisfied: pluggy<1.0,>=3D0.12 in /Library/Frameworks/P=
+ython.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D=
+5.4.3->-r requirements.txt (line 2)) (0.13.1)
+Requirement already satisfied: more-itertools>=3D4.0.0 in /Library/Framewor=
+ks/Python.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=
+=3D=3D5.4.3->-r requirements.txt (line 2)) (8.7.0)
+Requirement already satisfied: packaging in /Library/Frameworks/Python.fram=
+ework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.3->-r =
+requirements.txt (line 2)) (20.4)
+Requirement already satisfied: wcwidth in /Library/Frameworks/Python.framew=
+ork/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.3->-r re=
+quirements.txt (line 2)) (0.2.5)
+Requirement already satisfied: py>=3D1.5.0 in /Library/Frameworks/Python.fr=
+amework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D=3D5.4.3->-=
+r requirements.txt (line 2)) (1.9.0)
+Requirement already satisfied: idna<3,>=3D2.5 in /Library/Frameworks/Python=
+.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D=3D2.2=
+4.0->-r requirements.txt (line 4)) (2.10)
+Requirement already satisfied: certifi>=3D2017.4.17 in /Library/Frameworks/=
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D=
+=3D2.24.0->-r requirements.txt (line 4)) (2020.6.20)
+Requirement already satisfied: chardet<4,>=3D3.0.2 in /Library/Frameworks/P=
+ython.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D=
+=3D2.24.0->-r requirements.txt (line 4)) (3.0.4)
+Requirement already satisfied: pyyaml in /Library/Frameworks/Python.framewo=
+rk/Versions/3.9/lib/python3.9/site-packages (from pytest-testconfig->-r req=
+uirements.txt (line 3)) (5.3.1)
+Requirement already satisfied: pyparsing>=3D2.0.2 in /Library/Frameworks/Py=
+thon.framework/Versions/3.9/lib/python3.9/site-packages (from packaging->py=
+test=3D=3D5.4.3->-r requirements.txt (line 2)) (2.4.7)
++ pytest -sv test/weather_test.py --alluredir ./allure-results
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D test session starts =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+platform darwin -- Python 3.9.0, pytest-5.4.3, py-1.9.0, pluggy-0.13.1 -- /=
+Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.0', 'Platform': 'macOS-10.16-x86_64-i386-64bit', =
+'Packages': {'pytest': '5.4.3', 'py': '1.9.0', 'pluggy': '0.13.1'}, 'Plugin=
+s': {'assume': '2.4.2', 'metadata': '1.10.0', 'rerunfailures': '9.1.1', 'al=
+lure-pytest': '2.8.18', 'testconfig': '0.2.0', 'html': '2.1.1'}, 'CI': 'tru=
+e', 'BUILD_NUMBER': '21', 'BUILD_ID': '21', 'BUILD_URL': 'http://192.168.1.=
+103:8080/job/0412newjob/21/', 'NODE_NAME': 'master', 'JOB_NAME': '0412newjo=
+b', 'BUILD_TAG': 'jenkins-0412newjob-21', 'EXECUTOR_NUMBER': '0', 'JENKINS_=
+URL': 'http://192.168.1.103:8080/', 'JAVA_HOME': '/Library/Java/JavaVirtual=
+Machines/jdk1.8.0_251.jdk/Contents/Home', 'WORKSPACE': '/Users/bytedance/.j=
+enkins/workspace/0412newjob', 'GIT_COMMIT': '3038658f05a1321188292f379299fa=
+c275cdd9a9', 'GIT_URL': 'git@github.com:yanxuping/My_Test_Project.git', 'GI=
+T_BRANCH': 'origin/main'}
+rootdir: /Users/bytedance/.jenkins/workspace/0412newjob/My_Test_Project/Jen=
+kins_test/jenkins_Api_test
+plugins: assume-2.4.2, metadata-1.10.0, rerunfailures-9.1.1, allure-pytest-=
+2.8.18, testconfig-0.2.0, html-2.1.1
+collecting ... collected 3 items
+
+test/weather_test.py::Weather::test_1 {'weatherinfo': {'city': '=E6=B7=B1=
+=E5=9C=B3', 'cityid': '101280601', 'temp1': '24=E2=84=83', 'temp2': '30=E2=
+=84=83', 'weather': '=E9=98=B5=E9=9B=A8=E8=BD=AC=E5=A4=A7=E9=9B=A8', 'img1'=
+: 'n3.gif', 'img2': 'd9.gif', 'ptime': '18:00'}}
+Expect city =3D =E6=B7=B1=E5=9C=B3, while actual city =3D =E6=B7=B1=E5=9C=
+=B3
+PASSED
+test/weather_test.py::Weather::test_2 {'weatherinfo': {'city': '=E5=8C=97=
+=E4=BA=AC', 'cityid': '101010100', 'temp1': '18=E2=84=83', 'temp2': '31=E2=
+=84=83', 'weather': '=E5=A4=9A=E4=BA=91=E8=BD=AC=E9=98=B4', 'img1': 'n1.gif=
+', 'img2': 'd2.gif', 'ptime': '18:00'}}
+Expect city =3D =E5=8C=97=E4=BA=AC, while actual city =3D =E5=8C=97=E4=BA=
+=AC
+PASSED
+test/weather_test.py::Weather::test_3 {'weatherinfo': {'city': '=E4=B8=8A=
+=E6=B5=B7', 'cityid': '101020100', 'temp1': '19=E2=84=83', 'temp2': '23=E2=
+=84=83', 'weather': '=E5=A4=A7=E9=9B=A8=E8=BD=AC=E4=B8=AD=E9=9B=A8', 'img1'=
+: 'n9.gif', 'img2': 'd8.gif', 'ptime': '18:00'}}
+Expect city =3D =E4=B8=8A=E6=B5=B7, while actual city =3D =E4=B8=8A=E6=B5=
+=B7
+PASSED
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D 3 passed in 0.51s =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+[0412newjob] $ /Users/bytedance/.jenkins/tools/ru.yandex.qatools.allure.jen=
+kins.tools.AllureCommandlineInstallation/Allure/bin/allure generate -c -o /=
+Users/bytedance/.jenkins/workspace/0412newjob/allure-report
+allure-results does not exist
+Report successfully generated to /Users/bytedance/.jenkins/workspace/0412ne=
+wjob/allure-report
+Allure report was successfully generated.
+Creating artifact for the build.
+Artifact was added to the build.
+Checking for post-build
+Performing post-build step
+Checking if email needs to be generated
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending mail from default account using System Admin e-mail address
+messageContentType =3D text/plain; charset=3DUTF-8
+Request made to attach build log
+  Collecting change authors...
+    build: 21
+Adding recipients from project recipient list
+Analyzing: 2570129238@qq.com,yanxuping@bytedance.com
+Looking for: 2570129238@qq.com
+=09starting at: 0
+=09firstFoundIdx: 0
+=09firstFoundIdx-substring: 2570129238@qq.com,yanxuping@bytedance.com
+=09=3D> found type: 0
+Looking for: yanxuping@bytedance.com
+=09starting at: 18
+=09firstFoundIdx: 18
+=09firstFoundIdx-substring: yanxuping@bytedance.com
+=09=3D> found type: 0
+Analyzing: 2570129238@qq.com,yanxuping@bytedance.com
+Looking for: 2570129238@qq.com
+=09starting at: 0
+=09firstFoundIdx: 0
+=09firstFoundIdx-substring: 2570129238@qq.com,yanxuping@bytedance.com
+=09=3D> found type: 0
+Looking for: yanxuping@bytedance.com
+=09starting at: 18
+=09firstFoundIdx: 18
+=09firstFoundIdx-substring: yanxuping@bytedance.com
+=09=3D> found type: 0
+Analyzing: 2570129238@qq.com,yanxuping@bytedance.com
+Looking for: 2570129238@qq.com
+=09starting at: 0
+=09firstFoundIdx: 0
+=09firstFoundIdx-substring: 2570129238@qq.com,yanxuping@bytedance.com
+=09=3D> found type: 0
+Looking for: yanxuping@bytedance.com
+=09starting at: 18
+=09firstFoundIdx: 18
+=09firstFoundIdx-substring: yanxuping@bytedance.com
+=09=3D> found type: 0
+Adding recipients from trigger recipient list
+Successfully created MimeMessage
+Sending email to: 2570129238@qq.com yanxuping@bytedance.com
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.m=
+ail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: need username and password for authentication
+DEBUG SMTP: protocolConnect returning false, host=3Dsmtp.163.com, user=3Dby=
+tedance, password=3D<null>
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 465, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 465
+EHLO 192.168.1.103
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN
+250-AUTH=3DLOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFs9RD-UC=
+a0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN"
+DEBUG SMTP: Found extension "AUTH=3DLOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U=
+3Uj8Cz28x1UUUUU7Ic2I0Y2UFs9RD-UCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: STARTTLS requested but already using SSL
+DEBUG SMTP: protocolConnect login, host=3Dsmtp.163.com, user=3D13609394618@=
+163.com, password=3D<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD=
+5 NTLM XOAUTH2=20
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<13609394618@163.com>
+250 Mail OK
+DEBUG SMTP: sendPartial set
+RCPT TO:<2570129238@qq.com>
+250 Mail OK
+RCPT TO:<yanxuping@bytedance.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   2570129238@qq.com
+DEBUG SMTP:   yanxuping@bytedance.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+Date: Tue, 13 Apr 2021 22:05:39 +0800 (CST)
+From: 13609394618@163.com
+To: 2570129238@qq.com, yanxuping@bytedance.com
+Message-ID: <1804879115.5.1618322740575@[192.168.1.103]>
+Subject: =3D?UTF-8?Q?Jenkins=3DE6=3D9E=3D84=3DE5=3DBB=3DBA=3DE6=3D8F=3D90=
+=3DE7=3DA4=3DBA=3DEF=3DBC=3D9A?=3D
+ =3D?UTF-8?Q?0412newjob_-?=3D =3D?UTF-8?Q?_Build_#_21_-_Successful!?=3D
+MIME-Version: 1.0
+Content-Type: multipart/mixed;=20
+=09boundary=3D"----=3D_Part_4_612051339.1618322739945"
+X-Jenkins-Job: 0412newjob
+X-Jenkins-Result: SUCCESS
+List-ID:=20
+
+------=3D_Part_4_612051339.1618322739945
+Content-Type: text/plain; charset=3DUTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D3D"UTF-8">
+<title>0412newjob-=3DE7=3DAC=3DAC21=3DE6=3DAC=3DA1=3DE6=3D9E=3D84=3DE5=3DBB=
+=3DBA=3DE6=3D97=3DA5=3DE5=3DBF=3D97<=3D
+/title>
+</head>
+=3D20
+<body leftmargin=3D3D"8" marginwidth=3D3D"0" topmargin=3D3D"8" marginheight=
+=3D3D"4"
+    offset=3D3D"0">
+    <table width=3D3D"95%" cellpadding=3D3D"0" cellspacing=3D3D"0"
+        style=3D3D"font-size: 11pt; font-family: Tahoma, Arial, Helvetica, =
+sa=3D
+ns-serif">
+        <tr>
+            <td>(=3DE6=3D9C=3DAC=3DE9=3D82=3DAE=3DE4=3DBB=3DB6=3DE6=3D98=3D=
+AFJenkins=3DE7=3DA8=3D8B=3DE5=3DBA=3D
+=3D8F=3DE8=3D87=3DAA=3DE5=3D8A=3DA8=3DE4=3DB8=3D8B=3DE5=3D8F=3D91=3DE7=3D9A=
+=3D84=3DEF=3DBC=3D8C=3DE8=3DAF=3DB7=3DE5=3D8B=3DBF=3D
+=3DE5=3D9B=3D9E=3DE5=3DA4=3D8D=3DEF=3DBC=3D81)</td>
+        </tr>
+        <tr>
+            <td><h2><font color=3D3D"#0000FF">=3DE6=3D9E=3D84=3DE5=3DBB=3DB=
+A=3DE7=3DBB=3D93=3DE6=3D
+=3D9E=3D9C - Successful</font></h2></td>
+        </tr>
+        <tr>
+            <td><br />
+            <b><font color=3D3D"#0B610B">=3DE6=3D9E=3D84=3DE5=3DBB=3DBA=3DE=
+4=3DBF=3DA1=3DE6=3D81=3DAF=3D
+=3DEF=3DBC=3D9A</font></b><hr size=3D3D"2" width=3D3D"100%" align=3D3D"cent=
+er" /></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>=3DE9=3DA1=3DB9=3DE7=3D9B=3DAE=3DE5=3D90=3D8D=3DE7=
+=3DA7=3DB0=3DEF=3DBC=3D9A0412ne=3D
+wjob</li>
+                    <li>=3DE6=3D9E=3D84=3DE5=3DBB=3DBA=3DE7=3DBC=3D96=3DE5=
+=3D8F=3DB7=3DEF=3DBC=3D9A=3DE7=3DAC=3D
+=3DAC21=3DE6=3DAC=3DA1=3DE6=3D9E=3D84=3DE5=3DBB=3DBA</li>
+                    <!--
+                    <li>SVN =3DE7=3D89=3D88=3DE6=3D9C=3DAC=3DEF=3DBC=3D9A $=
+{SVN_REVISION}</li=3D
+>
+                    -->
+                    <li>=3DE8=3DA7=3DA6=3DE5=3D8F=3D91=3DE5=3D8E=3D9F=3DE5=
+=3D9B=3DA0=3DEF=3DBC=3D9AStarte=3D
+d by user yanxuping</li>
+                    <li>=3DE6=3D9E=3D84=3DE5=3DBB=3DBA=3DE6=3D97=3DA5=3DE5=
+=3DBF=3D97=3DEF=3DBC=3D9A<a hre=3D
+f=3D3D"http://192.168.1.103:8080/job/0412newjob/21/console">http://192.168.=
+1.=3D
+103:8080/job/0412newjob/21/console</a></li>
+                    <li>=3DE6=3D9E=3D84=3DE5=3DBB=3DBA=3DE5=3D9C=3DB0=3DE5=
+=3D9D=3D80=3DEF=3DBC=3D9A<a hre=3D
+f=3D3D"http://192.168.1.103:8080/job/0412newjob/21/">http://192.168.1.103:8=
+08=3D
+0/job/0412newjob/21/</a></li>
+                    <li>=3DE5=3DB7=3DA5=3DE4=3DBD=3D9C=3DE7=3D9B=3DAE=3DE5=
+=3DBD=3D95=3DEF=3DBC=3D9A<a hre=3D
+f=3D3D"http://192.168.1.103:8080/job/0412newjob/ws">http://192.168.1.103:80=
+80=3D
+/job/0412newjob/ws</a></li>
+                    <li>=3DE9=3DA1=3DB9=3DE7=3D9B=3DAE=3DE5=3D9C=3DB0=3DE5=
+=3D9D=3D80=3DEF=3DBC=3D9A<a hre=3D
+f=3D3D"http://192.168.1.103:8080/job/0412newjob/">http://192.168.1.103:8080=
+/j=3D
+ob/0412newjob/</a></li>
+                    <li>=3DE5=3D8F=3D98=3DE6=3D9B=3DB4=3DE9=3D9B=3D86=3DEF=
+=3DBC=3D9A<STYLE>
+BODY, TABLE, TD, TH, P {
+  font-family:Verdana,Helvetica,sans serif;
+  font-size:11px;
+  color:black;
+}
+h1 { color:black; }
+h2 { color:black; }
+h3 { color:black; }
+TD.bg1 { color:white; background-color:#0000C0; font-size:120% }
+TD.bg2 { color:white; background-color:#4040FF; font-size:110% }
+TD.bg3 { color:white; background-color:#8080FF; }
+TD.test_passed { color:blue; }
+TD.test_failed { color:red; }
+TD.console { font-family:Courier New; }
+</STYLE><BODY><TABLE><TR><TD align=3D3D"right"><IMG SRC=3D3D"http://192.168=
+.1.1=3D
+03:8080/static/e59dfe28/images/32x32/blue.gif"></IMG></TD><TD valign=3D3D"c=
+en=3D
+ter"><B style=3D3D"font-size: 200%;">BUILD SUCCESS</B></TD></TR><TR><TD>Bui=
+ld=3D
+ URL</TD><TD><A href=3D3D"http://192.168.1.103:8080/job/0412newjob/21/">htt=
+p:=3D
+//192.168.1.103:8080/job/0412newjob/21/</A></TD></TR><TR><TD>Project:</TD><=
+=3D
+TD>0412newjob</TD></TR><TR><TD>Date of build:</TD><TD>Tue, 13 Apr 2021 22:0=
+=3D
+5:30 +0800</TD></TR><TR><TD>Build duration:</TD><TD>9.5 sec</TD></TR></TABL=
+=3D
+E><BR></BR><TABLE width=3D3D"100%"><TR><TD class=3D3D"bg1" colspan=3D3D"2">=
+<B>CHA=3D
+NGES</B></TD></TR><TR><TD colspan=3D3D"2">No Changes</TD></TR></TABLE><BR><=
+/B=3D
+R><TABLE width=3D3D"100%"><TR><TD class=3D3D"bg1"><B>BUILD ARTIFACTS</B></T=
+D></=3D
+TR><TR><TD><li><a href=3D3D"http://192.168.1.103:8080/job/0412newjob/21/art=
+if=3D
+act/allure-report.zip">allure-report.zip</a></li></TD></TR></TABLE><BR></BR=
+=3D
+></BODY></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><b><font color=3D3D"#0B610B">Changes Since Last Successful =
+Bu=3D
+ild:</font></b><hr size=3D3D"2" width=3D3D"100%" align=3D3D"center" /></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>=3DE5=3D8E=3D86=3DE5=3D8F=3DB2=3DE5=3D8F=3D98=3DE6=
+=3D9B=3DB4=3DE8=3DAE=3DB0=3DE5=3DBD=3D
+=3D95 : <a href=3D3D"http://192.168.1.103:8080/job/0412newjob/changes">http=
+://1=3D
+92.168.1.103:8080/job/0412newjob/changes</a></li>
+                </ul> Changes for Build #21:<br />No changes
+<br />
+            </td>
+        </tr>
+        <tr>
+            <td><b><font color=3D3D"#0B610B">Failed Test Results=3DEF=3DBC=
+=3D9A</fo=3D
+nt></b><hr size=3D3D"2" width=3D3D"100%" align=3D3D"center" /></td>
+        </tr>
+        <tr>
+            <td><pre style=3D3D"font-size: 11pt; font-family: Tahoma, Arial=
+, =3D
+Helvetica, sans-serif">No tests ran.</pre>
+                <br /></td>
+        </tr>
+        <!--
+        <tr>
+            <td><b><font color=3D3D"#0B610B">=3DE6=3D9E=3D84=3DE5=3DBB=3DBA=
+=3DE6=3D97=3DA5=3DE5=3D
+=3DBF=3D97 (=3DE6=3D9C=3D80=3DE5=3D90=3D8E 100=3DE8=3DA1=3D8C):</font></b>
+            <hr size=3D3D"2" width=3D3D"100%" align=3D3D"center" /></td>
+        </tr>
+        <tr>
+            <td>Test Logs (if test has ran): <a
+                href=3D3D"http://192.168.1.103:8080/job/0412newjob/ws/TestR=
+es=3D
+ult/archive_logs/Log-Build-21.zip">http://192.168.1.103:8080/job/0412newjob=
+=3D
+//ws/TestResult/archive_logs/Log-Build-21.zip</a>
+                <br />
+            <br />
+            </td>
+        </tr>
+        <tr>
+            <td><textarea cols=3D3D"80" rows=3D3D"30" readonly=3D3D"readonl=
+y"
+                    style=3D3D"font-family: Courier New">[...truncated 291 =
+B.=3D
+...]
+Building in workspace /Users/bytedance/.jenkins/workspace/0412newjob
+The recommended git tool is: NONE
+using credential jenkins_git_ID
+ > git rev-parse --resolve-git-dir /Users/bytedance/.jenkins/workspace/0412=
+=3D
+newjob/My_Test_Project/.git # timeout=3D3D10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:yanxuping/My_Test_Project.gi=
+=3D
+t # timeout=3D3D10
+Fetching upstream changes from git@github.com:yanxuping/My_Test_Project.git
+ > git --version # timeout=3D3D10
+ > git --version # 'git version 2.24.3 (Apple Git-128)'
+using GIT_ASKPASS to set credentials jenkins_git_ID
+ > git fetch --tags --force --progress -- git@github.com:yanxuping/My_Test_=
+=3D
+Project.git +refs/heads/*:refs/remotes/origin/* # timeout=3D3D10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=3D3D10
+Checking out Revision 3038658f05a1321188292f379299fac275cdd9a9 (refs/remote=
+=3D
+s/origin/main)
+ > git config core.sparsecheckout # timeout=3D3D10
+ > git checkout -f 3038658f05a1321188292f379299fac275cdd9a9 # timeout=3D3D1=
+0
+Commit message: "Update requirements.txt"
+ > git rev-list --no-walk 3038658f05a1321188292f379299fac275cdd9a9 # timeou=
+=3D
+t=3D3D10
+Checking for pre-build
+Executing pre-build step
+Checking if email needs to be generated
+No emails were triggered.
+[0412newjob] $ /bin/sh -xe /var/folders/sg/hvzkbxpn4q1530qj3k53rhx80000gn/T=
+=3D
+/jenkins9153059694318700455.sh
++ source /Users/bytedance/.zshrc
+++ JAVA_HOME=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Content=
+s/=3D
+Home
+++ PATH=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Hom=
+e/=3D
+bin:/usr/bin:/bin:/usr/sbin:/sbin:.
+++ CLASSPATH=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Content=
+s/=3D
+Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Conte=
+=3D
+nts/Home/lib/dt.jar:.
+++ ANDROID_HOME=3D3D$'/Users/bytedance/Desktop/\346\210\221\347\232\204//AP=
+Pi=3D
+um/android-sdk-macosx'
+++ export JAVA_HOME
+++ export ANDROID_HOME
+++ export $'PATH=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Con=
+te=3D
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+=3D
+210\221\347\232\204//APPium/android-sdk-macosx/tools'
+++ PATH=3D3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/H=
+om=3D
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+=3D
+\347\232\204//APPium/android-sdk-macosx/tools'
+++ export $'PATH=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Con=
+te=3D
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+=3D
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+=3D
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools'
+++ PATH=3D3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/H=
+om=3D
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+=3D
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+=3D
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools'
+++ export PATH
+++ export CLASSPATH
+++ GOROOT=3D3D/usr/local/Cellar/go/1.15.3/libexec
+++ export GOROOT
+++ export $'PATH=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Con=
+te=3D
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+=3D
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+=3D
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/=
+=3D
+local/Cellar/go/1.15.3/libexec/bin'
+++ PATH=3D3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/H=
+om=3D
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+=3D
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+=3D
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/C=
+=3D
+ellar/go/1.15.3/libexec/bin'
+++ export GOPATH=3D3D/Users/bytedance/go
+++ GOPATH=3D3D/Users/bytedance/go
+++ export GOBIN=3D3D/Users/bytedance/go/bin
+++ GOBIN=3D3D/Users/bytedance/go/bin
+++ export $'PATH=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Con=
+te=3D
+nts/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\=
+=3D
+210\221\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Deskt=
+=3D
+op/\346\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/=
+=3D
+local/Cellar/go/1.15.3/libexec/bin:/Users/bytedance/go/bin'
+++ PATH=3D3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/H=
+om=3D
+e/bin:/usr/bin:/bin:/usr/sbin:/sbin:.:/Users/bytedance/Desktop/\346\210\221=
+=3D
+\347\232\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346=
+=3D
+\210\221\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/C=
+=3D
+ellar/go/1.15.3/libexec/bin:/Users/bytedance/go/bin'
+++ export $'PATH=3D3D/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Con=
+te=3D
+nts/Home/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/loc=
+=3D
+al/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/puppetlabs/bin:=
+=3D
+/usr/local/munki:/opt/X11/bin:.:/Users/bytedance/Desktop/\346\210\221\347\2=
+=3D
+32\204//APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346\210\2=
+=3D
+21\347\232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/Cellar/=
+=3D
+go/1.15.3/libexec/bin:/Users/bytedanc'
+++ PATH=3D3D$'/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/H=
+om=3D
+e/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:=
+=3D
+/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/puppetlabs/bin:/usr/lo=
+=3D
+cal/munki:/opt/X11/bin:.:/Users/bytedance/Desktop/\346\210\221\347\232\204/=
+=3D
+/APPium/android-sdk-macosx/tools:/Users/bytedance/Desktop/\346\210\221\347\=
+=3D
+232\204//APPium/android-sdk-macosx/platform-tools:/usr/local/Cellar/go/1.15=
+=3D
+..3/libexec/bin:/Users/bytedanc'
++ cd My_Test_Project/Jenkins_test/jenkins_Api_test
++ pip3 install -r requirements.txt
+Requirement already satisfied: allure-pytest=3D3D=3D3D2.8.18 in /Library/Fr=
+amew=3D
+orks/Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r req=
+=3D
+uirements.txt (line 1)) (2.8.18)
+Requirement already satisfied: pytest=3D3D=3D3D5.4.3 in /Library/Frameworks=
+/Pyt=3D
+hon.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirement=
+=3D
+s.txt (line 2)) (5.4.3)
+Requirement already satisfied: pytest-testconfig in /Library/Frameworks/Pyt=
+=3D
+hon.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirement=
+=3D
+s.txt (line 3)) (0.2.0)
+Requirement already satisfied: requests=3D3D=3D3D2.24.0 in /Library/Framewo=
+rks/=3D
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirem=
+=3D
+ents.txt (line 4)) (2.24.0)
+Requirement already satisfied: urllib3=3D3D=3D3D1.25.11 in /Library/Framewo=
+rks/=3D
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from -r requirem=
+=3D
+ents.txt (line 5)) (1.25.11)
+Requirement already satisfied: allure-python-commons=3D3D=3D3D2.8.18 in /Li=
+brar=3D
+y/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages (fro=
+=3D
+m allure-pytest=3D3D=3D3D2.8.18->-r requirements.txt (line 1)) (2.8.18)
+Requirement already satisfied: six>=3D3D1.9.0 in /Library/Frameworks/Python=
+.f=3D
+ramework/Versions/3.9/lib/python3.9/site-packages (from allure-pytest=3D3D=
+=3D3D=3D
+2.8.18->-r requirements.txt (line 1)) (1.15.0)
+Requirement already satisfied: attrs>=3D3D17.4.0 in /Library/Frameworks/Pyt=
+ho=3D
+n.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D3D=3D3D=
+5.4.=3D
+3->-r requirements.txt (line 2)) (20.2.0)
+Requirement already satisfied: pluggy<1.0,>=3D3D0.12 in /Library/Frameworks=
+/P=3D
+ython.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D3D=
+=3D3D=3D
+5.4.3->-r requirements.txt (line 2)) (0.13.1)
+Requirement already satisfied: more-itertools>=3D3D4.0.0 in /Library/Framew=
+or=3D
+ks/Python.framework/Versions/3.9/lib/python3.9/site-packages (from pytest=
+=3D
+=3D3D=3D3D5.4.3->-r requirements.txt (line 2)) (8.7.0)
+Requirement already satisfied: packaging in /Library/Frameworks/Python.fram=
+=3D
+ework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D3D=3D3D5.4.3-=
+>-r =3D
+requirements.txt (line 2)) (20.4)
+Requirement already satisfied: wcwidth in /Library/Frameworks/Python.framew=
+=3D
+ork/Versions/3.9/lib/python3.9/site-packages (from pytest=3D3D=3D3D5.4.3->-=
+r re=3D
+quirements.txt (line 2)) (0.2.5)
+Requirement already satisfied: py>=3D3D1.5.0 in /Library/Frameworks/Python.=
+fr=3D
+amework/Versions/3.9/lib/python3.9/site-packages (from pytest=3D3D=3D3D5.4.=
+3->-=3D
+r requirements.txt (line 2)) (1.9.0)
+Requirement already satisfied: idna<3,>=3D3D2.5 in /Library/Frameworks/Pyth=
+on=3D
+..framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D3D=3D=
+3D2.2=3D
+4.0->-r requirements.txt (line 4)) (2.10)
+Requirement already satisfied: certifi>=3D3D2017.4.17 in /Library/Framework=
+s/=3D
+Python.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D=
+3D=3D
+=3D3D2.24.0->-r requirements.txt (line 4)) (2020.6.20)
+Requirement already satisfied: chardet<4,>=3D3D3.0.2 in /Library/Frameworks=
+/P=3D
+ython.framework/Versions/3.9/lib/python3.9/site-packages (from requests=3D3=
+D=3D
+=3D3D2.24.0->-r requirements.txt (line 4)) (3.0.4)
+Requirement already satisfied: pyyaml in /Library/Frameworks/Python.framewo=
+=3D
+rk/Versions/3.9/lib/python3.9/site-packages (from pytest-testconfig->-r req=
+=3D
+uirements.txt (line 3)) (5.3.1)
+Requirement already satisfied: pyparsing>=3D3D2.0.2 in /Library/Frameworks/=
+Py=3D
+thon.framework/Versions/3.9/lib/python3.9/site-packages (from packaging->py=
+=3D
+test=3D3D=3D3D5.4.3->-r requirements.txt (line 2)) (2.4.7)
++ pytest -sv test/weather_test.py --alluredir ./allure-results
+=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=
+=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D
+=3D3D=3D3D=3D3D=3D3D test session starts =3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3=
+D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D
+=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=3D3D=
+=3D3D
+platform darwin -- Python 3.9.0, pytest-5.4.3, py-1.9.0, pluggy-0.13.1 -- /=
+=3D
+Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.0', 'Platform': 'macOS-10.16-x86_64-i386-64bit', =
+=3D
+'Packages': {'pytest': '5.4.3', 'py': '1.9.0', 'pluggy': '0.13.1'}, 'Plugin=
+=3D
+s': {'assume': '2.4.2', 'metadata': '1.10.0', 'rerunfailures': '9.1.1', 'al=
+=3D
+lure-pytest': '2.8.18', 'testconfig': '0.2.0', 'html': '2.1.1'}, 'CI': 'tru=
+=3D
+e', 'BUILD_NUMBER': '21', 'BUILD_ID': '21', 'BUILD_URL': 'http://192.168.1.=
+=3D
+103:8080/job/0412newjob/21/', 'NODE_NAME': 'master', 'JOB_NAME': '0412newjo=
+=3D
+b', 'BUILD_TAG': 'jenkins-0412newjob-21', 'EXECUTOR_NUMBER': '0', 'JENKINS_=
+=3D
+
+------=_Part_4_612051339.1618322739945--
