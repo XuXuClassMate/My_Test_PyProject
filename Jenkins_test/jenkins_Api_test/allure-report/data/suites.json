@@ -1,5 +1,56 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "name" : "suites",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "weather_test",
+      "children" : [ {
+        "name" : "Weather",
+        "children" : [ {
+          "name" : "test_1",
+          "uid" : "7965b012e8dc9d93",
+          "parentUid" : "a0a2d35963331bf0701e689daf4c093a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1618363320867,
+            "stop" : 1618363321083,
+            "duration" : 216
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_2",
+          "uid" : "f28694aafc925ce",
+          "parentUid" : "a0a2d35963331bf0701e689daf4c093a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1618363321086,
+            "stop" : 1618363321134,
+            "duration" : 48
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_3",
+          "uid" : "ca2aa39b3bc98a58",
+          "parentUid" : "a0a2d35963331bf0701e689daf4c093a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1618363321137,
+            "stop" : 1618363321180,
+            "duration" : 43
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a0a2d35963331bf0701e689daf4c093a"
+      } ],
+      "uid" : "8ae0de7c934a3e0dab0cf8b70c3b0d65"
+    } ],
+    "uid" : "ff2b04dbb9c449a4d40723f51d841925"
+  } ],
+  "name" : "suites"
 }

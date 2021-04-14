@@ -1,5 +1,60 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test Weather api",
+    "children" : [ {
+      "name" : "Test of ShenZhen",
+      "children" : [ {
+        "name" : "test_1",
+        "uid" : "7965b012e8dc9d93",
+        "parentUid" : "d6e797e8c7c24a6d628c9101ec950fca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618363320867,
+          "stop" : 1618363321083,
+          "duration" : 216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d6e797e8c7c24a6d628c9101ec950fca"
+    }, {
+      "name" : "Test of BeiJing",
+      "children" : [ {
+        "name" : "test_2",
+        "uid" : "f28694aafc925ce",
+        "parentUid" : "548282be6d6b28cc3ea1a58f027f53b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618363321086,
+          "stop" : 1618363321134,
+          "duration" : 48
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "548282be6d6b28cc3ea1a58f027f53b5"
+    }, {
+      "name" : "Test of ShangHai",
+      "children" : [ {
+        "name" : "test_3",
+        "uid" : "ca2aa39b3bc98a58",
+        "parentUid" : "379ed9e775e6bfae19ef4ed5b8afacb1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618363321137,
+          "stop" : 1618363321180,
+          "duration" : 43
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "379ed9e775e6bfae19ef4ed5b8afacb1"
+    } ],
+    "uid" : "cf8fe6f7b64dfe94b6bf77ba09f61910"
+  } ],
+  "name" : "behaviors"
 }

@@ -26,6 +26,9 @@
     #### jenkins自动化测试结果
   - [执行日志](./Jenkins_test/jenkins_Api_test/email_log/build.log)
   - [执行结束已发送邮件](./Jenkins_test/jenkins_Api_test/email_log/Jenkins构建提示：0412newjob%20-%20Build%20%23%201%20-%20Successful!.eml)
+  - [生成的Allure文件](./Jenkins_test/jenkins_Api_test/allure-report)
+    ![测试结果](./Jenkins_test/jenkins_Api_test/allure-report/data/Lark20210414-093230.png)
+    ![测试结果](./Jenkins_test/jenkins_Api_test/allure-report/data/Lark20210414-093223.png)
 
 ## 接口测试
   - [使用mitmdump,API_Mock](/test_API/API_MOCK/api_mock.py)

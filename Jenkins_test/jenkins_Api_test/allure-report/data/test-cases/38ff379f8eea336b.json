@@ -1,0 +1,90 @@
+{
+  "uid" : "38ff379f8eea336b",
+  "name" : "test_3",
+  "fullName" : "test.weather_test.Weather#test_3",
+  "historyId" : "b03bcb7fbeb2ba2f264f6d3ae60806c1",
+  "time" : {
+    "start" : 1618322736829,
+    "stop" : 1618322736983,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1618322736631,
+      "stop" : 1618322736631,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1618322736984,
+      "stop" : 1618322736984,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of ShangHai"
+  }, {
+    "name" : "feature",
+    "value" : "Test Weather api"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "weather_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Weather"
+  }, {
+    "name" : "host",
+    "value" : "C02CJ58UMD6R"
+  }, {
+    "name" : "thread",
+    "value" : "43818-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.weather_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "38ff379f8eea336b.json",
+  "parameterValues" : [ ]
+}

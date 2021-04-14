@@ -1,0 +1,90 @@
+{
+  "uid" : "f2863028e51d2171",
+  "name" : "test_2",
+  "fullName" : "test.weather_test.Weather#test_2",
+  "historyId" : "603f46acfaa5508b5528ed00905eb42d",
+  "time" : {
+    "start" : 1618322607033,
+    "stop" : 1618322607100,
+    "duration" : 67
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1618322606957,
+      "stop" : 1618322606957,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1618322607160,
+      "stop" : 1618322607160,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of BeiJing"
+  }, {
+    "name" : "feature",
+    "value" : "Test Weather api"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "weather_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Weather"
+  }, {
+    "name" : "host",
+    "value" : "C02CJ58UMD6R"
+  }, {
+    "name" : "thread",
+    "value" : "43749-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.weather_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f2863028e51d2171.json",
+  "parameterValues" : [ ]
+}
