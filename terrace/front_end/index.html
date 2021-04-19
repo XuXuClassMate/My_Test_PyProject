@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="app">
         {{msg}}
@@ -17,25 +19,30 @@
         <p v-for="(value,key,index) in job">value:{{value}} ---key:{{key}} ---index:{{index}}</p>
         <p v-for="(value,index) in jobair">value:name={{value.name}},age={{value.age}},sex={{value.sex}}</p>
         <button v-on:click="add()">加1</button>
+        <button @click="add()">加1</button>
         <div>{{count}}</div>
-        <div style="width: 70px;height: 70px;border: 1px solid #000"><h1>测试</h1></div>
+        <div style="width: 70px;height: 70px;border: 1px solid #000" v-bind:style="colour">
+            <h1>测试</h1>
+        </div>
+        <input type="text" v-model="test">
+        <button @click="showtest">打印</button>
 
     </div>
     <script src="./vue.js"></script>
 
     <script>
         new Vue({
-            el:'#app',
-            data:{
-                msg:'hello world',
-                show:true,
-                arr:['id', 'name', 'class', 'type'],
-                job:{
-                    name:"lili",
-                    age:"20",
-                    sex:"女"
+            el: '#app',
+            data: {
+                msg: 'hello world',
+                show: true,
+                arr: ['id', 'name', 'class', 'type'],
+                job: {
+                    name: "lili",
+                    age: "20",
+                    sex: "女"
                 },
-                jobair:[
+                jobair: [
                     {
                         name: "xiongda",
                         age: "20",
@@ -51,14 +58,24 @@
                         sex: "女"
                     }
                 ],
-                count:1
+                count: 1,
+                colour: {
+                    backgroundColor: 'green'
+                },
+                test: "123"
+
             },
-            methods:{
-                add(){
+            methods: {
+                add() {
                     this.count++
                 }
+            },
+            showtest() {
+                console.log(this.test)
+
             },
         })
     </script>
 </body>
+
 </html>
