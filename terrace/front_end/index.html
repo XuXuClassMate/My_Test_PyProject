@@ -25,8 +25,7 @@
             <h1>测试</h1>
         </div>
         <input type="text" v-model="test">
-        <button @click="showtest()">打印</button>
-
+        <button @click="showiest()">打印</button>
     </div>
     <script src="./vue.js"></script>
 
@@ -63,13 +62,12 @@
                     backgroundColor: 'green'
                 },
                 test: "123"
-
             },
             methods: {
                 add() {
                     this.count++
                 },
-                showtest() {
+                showiest() {
                     console.log(this.test)
                 },
             },
