@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import SingIn from '../components/SingIn.vue'
+import SingUp from '../components/SingUp.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path:'/',
     name:'SingIn',
     component:SingIn
+  },
+  {
+    path:'/sing-up',
+    name:'SingUp',
+    component:SingUp
   }
 ]
 
