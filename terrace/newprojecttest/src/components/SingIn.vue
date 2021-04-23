@@ -13,6 +13,7 @@ export default {
     methods:{
         singup(){
             console.log('123')
+            this.$router.push({name:'SingUp'})
         }
     }
     
@@ -23,8 +24,8 @@ export default {
     width: 300px;
     margin: 0 auto;
     text-align: center;
-    /* margin: auto;
-    width: 20%; 
+    margin: auto;
+    /* width: 20%; 
     border: 1px solid;
     padding: 5px; */
 } 
