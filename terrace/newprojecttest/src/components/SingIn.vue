@@ -3,8 +3,8 @@
         <h1>登录</h1>
         <v-text-field label="用户名" v-model="username" type="username"></v-text-field>
         <v-text-field label="密码"  v-model="password" type="password"></v-text-field>
-        <v-btn depressed @click="login()" color="primary">登录</v-btn> 
-        <v-btn depressed @click="singup()">注册</v-btn>
+        <v-btn depressed @click="login()" color="primary" style="padding: 8px; border-radius: 6px; margin: 0 10px;">登录</v-btn> 
+        <v-btn depressed @click="singup()" style="padding: 8px; border-radius: 6px; margin: 0 10px;">注册</v-btn>
         <!-- <div style="margin-top: 10px"><v-btn  color="error">找回密码</v-btn></div>   -->
     </div>
 </template>
@@ -26,6 +26,7 @@ export default {
                 username: this.username,
                 password: this.password,
             }
+            console.log(post_data)
             this.$api.user.SingIn(post_data).then(res=>{
                 console.log(res)
             })

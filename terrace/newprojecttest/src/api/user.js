@@ -1,11 +1,11 @@
 import axios from './http'
 
 const user = {
-    SingIn(){
+    SingIn(params){
         // 登录接口
         return axios.post('/user/login', params)
     }, 
-    SingUp(){
+    SingUp(params){
         // 注册接口
         return axios.post('/user/register', params)
     }

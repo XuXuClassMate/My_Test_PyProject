@@ -4,8 +4,8 @@
         <v-text-field v-model="username" label='用户名' type='user name'></v-text-field>
         <v-text-field v-model="password" label='密码' type='password'></v-text-field>
         <v-text-field v-model="email" label='邮箱' type_id='email'></v-text-field>
-        <v-btn color="primary" @click="register()" type="register">注册</v-btn>
-        <v-btn color="primary" @click="singIn()" text id="singIn">去登陆</v-btn>
+        <v-btn depressed color="primary" @click="register()" style="padding: 8px; border-radius: 6px; margin: 0 10px;">注册</v-btn>
+        <v-btn depressed @click="singIn()" style="padding: 8px; border-radius: 6px; margin: 0 10px;" text id="singIn">去登陆</v-btn>
         
     </div>
 
