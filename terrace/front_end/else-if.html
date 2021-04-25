@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Demo</title>
+</head>
+<body>
+    <!-- view层 -->
+    <div id='app'>
+       <div v-if='type === "A"'>A</div> 
+       <div v-else-if='type === "B"'>B</div>
+       <div v-else-if='type === "C"'>C</div>
+       <div v-else>Not A/B/C</div>
+    </div>
+       
+</body>
+<script> 
+    var vue = new Vue({   //Vue：是一个实例，是viewmodel层
+        // el: element的缩写，是用来挂载元素的
+        el:'#app',
+        // data 是数据，数据简单的model层
+        data:{
+            type: 'A'
+
+        }
+    })
+</script>
+</html>
