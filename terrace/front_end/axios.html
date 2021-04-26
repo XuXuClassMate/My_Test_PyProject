@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Axios</title>
+
+</head>
+
+<body>
+    <div id='app'>
+        <div>
+            名称：{{info.name}}
+        </div>
+        <div>
+            Url：{{info.url}}
+        </div>
+        <div>
+            地址：{{info.address.country}} --> {{info.address.city}} --> {{info.address.street}}
+        </div>
+    </div>
+</body>
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data(){
+            return{
+                info:{
+                    name:'',
+                    url:'',
+                    address:{
+                        country:'',
+                        city:'',
+                        street:''
+                    }
+
+                }
+            }
+        },
+        mounted(){
+            axios
+                .get('data.json')
+                .then(response=>this.info=response.data);
+        }
+    })
+</script>
+
+</html>
