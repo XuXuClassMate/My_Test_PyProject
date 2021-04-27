@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>组件</title>
+
+</head>
+
+<body>
+    <div id='app'>
+        <ul>
+            <!-- component-li:是组件，标签名就是组件名称 -->
+            <component-li v-for="item2 in items" :item1="item2"></component-li>
+        </ul>
+    </div>
+</body>
+<script>
+    // 定义组件
+    Vue.component('component-li',{
+        props:['item1'],
+        template:'<li>{{item1}}</li>'
+    })
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            items:['刘峰', '闫旭平', '张宁', '孙秋悦', '袁婷']
+        }
+    })
+</script>
+
+</html>

@@ -20,7 +20,7 @@
         <p v-for="(value,index) in jobair">value:name={{value.name}},age={{value.age}},sex={{value.sex}}</p> -->
         <ul>
             <!-- 使用v-for时尽可能提供key attribute ，除非遍历输出的DOM内容非常简单，或者是可以依赖默认行为性能上的提升。 -->
-            <li v-for="item in job.jobair" :key="item">
+            <li v-for="item in job.jobair" :item="item">
                 {{item.name}}
                 {{item.age}}
                 {{item.sex}}
