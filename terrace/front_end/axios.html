@@ -16,10 +16,22 @@
             名称：{{info.name}}
         </div>
         <div>
-            Url：{{info.url}}
+            <!-- href 指定路由(字符串)，写死的 -->
+            <!-- Url：<a target="_blank" href="http://www.baidu.com">{{info.url}}</a> -->
+            Url：<a target="_blank" :href="info.url">{{info.url}}</a>
+            <!-- v-bind:绑定 ：是v-bind的缩写  :href后面的路由是变量-->
         </div>
         <div>
             地址：{{info.address.country}} --> {{info.address.city}} --> {{info.address.street}}
+        </div>
+        <div>
+            <ul> 
+                <!-- 数据用ul 下 li -->
+                <li v-for="link in info.links">
+                    {{link.name}} -->
+                    <a target='_blank' :href='link.url'>{{link.url}}</a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
@@ -35,7 +47,11 @@
                         country:'',
                         city:'',
                         street:''
-                    }
+                    },
+                    links:[
+                        {name:''},
+                        {url:''}
+                    ]
 
                 }
             }
@@ -44,6 +60,7 @@
             axios
                 .get('data.json')
                 .then(response=>this.info=response.data);
+                //http-server插件下载运行
         }
     })
 </script>
