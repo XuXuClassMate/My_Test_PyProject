@@ -3,6 +3,10 @@
 - [简历查看](resume/闫旭平求职简历.doc)
 
 ## _我的测试项目_
+-[最近正在积极筹备自己写一个测试平台
+    技术栈是Vue+Flask的
+    敬请期待！写的不好的地方请大佬们多指教](./terrace/newprojecttest)
+    
 
 ### unittest
 - [我的代码存放](./test_game/src)

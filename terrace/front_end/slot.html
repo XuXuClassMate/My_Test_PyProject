@@ -45,6 +45,7 @@
         methods:{
             // 这里的index可以省略
             remove:function(index){
+                // $emit自定义事件
                 this.$emit('remove', index)
             }
         }
@@ -57,6 +58,7 @@
         },
         methods: {
             removeitems: function (index) {
+                // 使用索引删除数据
                 this.items.splice(index,1)
             }
         }
