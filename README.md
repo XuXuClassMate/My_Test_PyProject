@@ -1,9 +1,9 @@
 
-[comment]: <> (## 个人简历实时版)
-
-[comment]: <> (- [简历查看]&#40;resume/闫旭平求职简历.doc&#41;)
-
 ## _我的测试项目_
+- [最近正在积极筹备自己写一个测试平台，技术栈是Vue+Flask的，敬请期待！写的不好的地方请大佬们多指教](./terrace/newprojecttest)
+- so it's me [vue自学学习笔记](./treeace/front_end)
+    
+
 
 ### unittest
 - [我的代码存放](./test_game/src)
