@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>插槽</title>
+
+</head>
+
+<body>
+    <div id='app'>
+        <todo>
+            <todo-title slot="todo-title" :title="title"></todo-title>
+            <todo-item slot="todo-item" v-for="item in items" :item="item"></todo-item>
+        </todo>
+        
+    </div>
+    <!-- <div>标题</div>
+    <ul>
+        <li>内容1</li>
+        <li>内容2</li>
+        <li>内容3</li>
+    </ul> -->
+</body>
+<script>
+    // todo组件
+    Vue.component('todo',{
+        // slot是插槽，定义组件的位置
+        template:'<div><slot name="todo-title"></slot><slot name="todo-item"></slot></div>'
+    })
+    //标题组件
+    Vue.component('todo-title', {
+        //props:传参数
+        props:['title'],
+        template: '<div>{{title}}</div>'
+        })
+    //内容组件
+    Vue.component('todo-item', {
+        props:['item'],
+        template: '<li>{{item}}</li>'
+        })
+    var vue = new Vue({
+        el: '#app',
+        data:{
+            title:'回家待办事项',
+            items: ['牛肉面', '放哈', '浆水面', '羊肉串']
+        }
+        
+    })
+</script>
+
+</html>
