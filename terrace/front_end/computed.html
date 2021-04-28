@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>获取当前时间戳(毫秒)</title>
+
+</head>
+
+<body>
+    <div id='app'>
+       当前时间方法：{{getCurrentTime()}}
+       <br>
+       当前时间方法：{{getCurrentTime1}}
+    </div>
+</body>
+<script>
+    var vue = new Vue({
+        el: '#app',
+        methods:{
+            getCurrentTime:function(){
+                return Date.now();
+            }
+        },
+        computed:{
+            // computed中都是计算属性、调用的时候不加()：getCurrentTime1就可以完成调用
+            // 计算属性，类似于缓存
+            getCurrentTime1:function(){
+                return Date.now()
+            }
+        }
+    })
+</script>
+
+</html>
