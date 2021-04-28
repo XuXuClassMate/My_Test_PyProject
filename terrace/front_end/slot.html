@@ -13,8 +13,10 @@
     <div id='app'>
         <todo>
             <todo-title slot="todo-title" :title="title"></todo-title>
-            <todo-item slot="todo-item" v-for="item in items" :item="item"></todo-item>
+            <!-- v-for="(item, index) in items" 这是循环的另一个写法 -->
+            <todo-item slot="todo-item" v-for="(item, index) in items" :item="item" :index="index" @remove="removeitems(index)"></todo-item>
         </todo>
+        
         
     </div>
     <!-- <div>标题</div>
@@ -38,14 +40,25 @@
         })
     //内容组件
     Vue.component('todo-item', {
-        props:['item'],
-        template: '<li>{{item}}</li>'
+        props:['item', 'index'],
+        template: '<li>{{item}}<button @click="remove">×</button></li>',
+        methods:{
+            // 这里的index可以省略
+            remove:function(index){
+                this.$emit('remove', index)
+            }
+        }
         })
     var vue = new Vue({
         el: '#app',
         data:{
             title:'回家待办事项',
             items: ['牛肉面', '放哈', '浆水面', '羊肉串']
+        },
+        methods: {
+            removeitems: function (index) {
+                this.items.splice(index,1)
+            }
         }
         
     })
