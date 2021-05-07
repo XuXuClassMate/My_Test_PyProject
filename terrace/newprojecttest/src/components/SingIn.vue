@@ -18,7 +18,7 @@ export default {
     },  
     methods:{
         singup(){
-            console.log('123')
+            // console.log('123')
             this.$router.push({name:'SingUp'})
         },
         login(){
