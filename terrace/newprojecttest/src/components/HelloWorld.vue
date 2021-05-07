@@ -1,10 +1,11 @@
 <template>
+<!-- html部分 -->
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
           :src="require('../assets/logo.svg')"
-          class="my-3"
+          class="my-2"
           contain
           height="200"
         />
@@ -92,6 +93,7 @@
 </template>
 
 <script>
+// javascript部分
   export default {
     name: 'HelloWorld',
 
@@ -151,5 +153,6 @@
 </script>
 
 <style scoped>
+/* css部分 */
 
 </style>

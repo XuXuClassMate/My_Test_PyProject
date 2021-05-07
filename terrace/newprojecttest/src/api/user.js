@@ -10,4 +10,5 @@ const user = {
         return axios.post('/user/register', params)
     }
 }
+// 接口返回
 export default user
