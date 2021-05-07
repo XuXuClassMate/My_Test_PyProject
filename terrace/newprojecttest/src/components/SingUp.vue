@@ -7,7 +7,6 @@
         <v-btn depressed color="primary" @click="register()" style="padding: 8px; border-radius: 6px; margin: 0 10px;">注册</v-btn>
         <v-btn depressed @click="singIn()" style="padding: 8px; border-radius: 6px; margin: 0 10px;" text id="singIn">去登陆</v-btn>     
     </div> 
-
 </template>
 <script>
 export default {
@@ -19,10 +18,9 @@ export default {
         }
     },
     methods:{
-        singIn(){
-            
+        singIn(){ 
+            // 这里为什么和注册接口不是一个模式->this.$api.user.SingIn调用格式
             this.$router.push({name:'SingIn'})
-            // this.$api.user.singIn(post)
         },
         register(){
             let post_data = {
