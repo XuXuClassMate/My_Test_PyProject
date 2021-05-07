@@ -29,6 +29,9 @@ export default {
             console.log(post_data)
             this.$api.user.SingIn(post_data).then(res=>{
                 console.log(res)
+                localStorage.setItem('token',res,data.data.token)
+                localStorage.setItem('username'.this.username)
+                this.$router.push({name:'Jenkins'})
             })
         }
     }

@@ -19,7 +19,7 @@ export default {
     },
     methods:{
         singIn(){ 
-            // 这里为什么和注册接口不是一个模式->this.$api.user.SingIn调用格式
+            // 这里是页面跳转
             this.$router.push({name:'SingIn'})
         },
         register(){
@@ -28,6 +28,7 @@ export default {
                 password : this.password,
                 email : this.email,
             }
+            //这里是接口登录
             this.$api.user.SingUp(post_data).then(res=>{
                 console.log(res)
             })

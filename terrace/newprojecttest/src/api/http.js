@@ -5,4 +5,12 @@ var instance = axios.create({
     },
     baseURL:'http://stug.ceshiren.com:8089/'
 })
+
+instance.interceptors.request.use(config=>{
+  if(localStorage.getItem('token')){
+    config.headers.common['token']=localStorage.getItem('token')
+  }
+  return config
+})
+
 export default instance
