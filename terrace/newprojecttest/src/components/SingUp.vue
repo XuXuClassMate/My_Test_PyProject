@@ -8,6 +8,12 @@
         <v-btn depressed @click="singIn()" style="padding: 8px; border-radius: 6px; margin: 0 10px;" text id="singIn">去登陆</v-btn>     
     </div> 
 </template>
+
+
+
+
+
+
 <script>
 export default {
     data(){
