@@ -3,6 +3,17 @@ import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import SingIn from '../components/SingIn.vue'
 import SingUp from '../components/SingUp.vue'
+import Case from '../components/Case.vue'
+import Jenkins from '../components/Jenkins.vue'
+import Report from '../components/Report.vue'
+import Task from '../components/Task.vue'
+
+// 解决router更新路由冗余问题
+const originalPush = VueRouter.prototype.push
+
+VueRouter.prototype.push = function push(location){
+  return originalPush.call(this, location).catch(err => err)
+}
 
 Vue.use(VueRouter)
 
@@ -29,6 +40,26 @@ const routes = [
     path:'/sing-up',
     name:'SingUp',
     component:SingUp
+  },
+  {
+    path:'/case',
+    name:'Case',
+    component:Case
+  },
+  {
+    path:'/jenkins',
+    name:'Jenkins',
+    component:Jenkins
+  },
+  {
+    path:'/report',
+    name:'Report',
+    component:Report
+  },
+  {
+    path:'/task',
+    name:'Task',
+    component:Task
   }
 ]
 

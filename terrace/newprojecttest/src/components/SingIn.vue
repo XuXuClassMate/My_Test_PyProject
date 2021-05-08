@@ -29,9 +29,12 @@ export default {
             console.log(post_data)
             this.$api.user.SingIn(post_data).then(res=>{
                 console.log(res)
+                // 把登录获取到的token存储下来，以便后续调用
                 localStorage.setItem('token',res,data.data.token)
                 localStorage.setItem('username'.this.username)
                 this.$router.push({name:'Jenkins'})
+                //case页面作为登陆成功的默认展页面
+                this.$router.push({name:'Case'})
             })
         }
     }

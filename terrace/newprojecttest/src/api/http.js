@@ -7,6 +7,7 @@ var instance = axios.create({
 })
 
 instance.interceptors.request.use(config=>{
+    // 把本地存储的token放在http请求中发送出去
   if(localStorage.getItem('token')){
     config.headers.common['token']=localStorage.getItem('token')
   }
