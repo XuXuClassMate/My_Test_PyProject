@@ -7,6 +7,7 @@ import Case from '../components/Case.vue'
 import Jenkins from '../components/Jenkins.vue'
 import Report from '../components/Report.vue'
 import Task from '../components/Task.vue'
+import User from '../components/User.vue'
 
 // 解决router更新路由冗余问题
 const originalPush = VueRouter.prototype.push
@@ -60,6 +61,10 @@ const routes = [
     path:'/task',
     name:'Task',
     component:Task
+  },{
+    path:'/user',
+    name:'User',
+    component:User
   }
 ]
 

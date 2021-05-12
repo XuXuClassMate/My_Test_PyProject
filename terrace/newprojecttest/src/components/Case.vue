@@ -1,11 +1,12 @@
 <template>
     <div>
         <template>
-            <v-tabs fixed-tabs background-color="indigo" dark>
+            <v-tabs fixed-tabs background-color="indigo" dark :value="0">
                 <v-tab @click="$router.push({name:'Case'})">用例管理</v-tab>
                 <v-tab @click="$router.push({name:'Task'})">任务管理</v-tab>
                 <v-tab @click="$router.push({name:'Jenkins'})">Jenkins管理</v-tab>
                 <v-tab @click="$router.push({name:'Report'})">测试报告管理</v-tab>
+                <v-tab @click="$router.push({name:'User'})">用户管理</v-tab>
             </v-tabs>
         </template>
         Case
