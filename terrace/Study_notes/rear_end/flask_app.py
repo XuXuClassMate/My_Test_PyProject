@@ -1,6 +1,7 @@
-from flask import Flask, escape, request
+from flask import Flask, escape, request, session
 
 app = Flask(__name__)
+app.secret_key = "asveniruby"  # 密钥，真实环境下为动态密钥
 
 
 @app.route('/')
@@ -20,6 +21,8 @@ def login():
     res = {
         "method": request.method,
         "url": request.path,
-        "args": request.args  # 参数
+        "args": request.args,  # 参数
+        "form": request.form
     }
+    session['username'] = request.args.get('name')
     return res
