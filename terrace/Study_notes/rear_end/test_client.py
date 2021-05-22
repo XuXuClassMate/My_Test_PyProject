@@ -1,5 +1,6 @@
 import pymysql
 
+db = pymysql.connect(
     host='stuq.ceshiren.com',
     user='hogwarts_python',
     password='hogwarts_python',
