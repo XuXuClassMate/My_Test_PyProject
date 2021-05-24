@@ -9,6 +9,9 @@
                 <v-tab @click="$router.push({name:'User'})">用户管理</v-tab>
             </v-tabs>
         </template>
+        <v-dialog v-model="editDialog"></v-dialog>
+
+
         <v-dialog v-model="addDialog" max-width="500px">
         <v-card>
             <v-card-title>
@@ -18,7 +21,8 @@
                 <v-container>
                     <v-text-field label="用例名称" v-model="addItem.name"></v-text-field>
                     <v-select label="用例类型" :items='selectItem' v-model="addItem.type"></v-select>
-                    <v-textarea label="用例详情" v-model="addItem.data"></v-textarea>
+                    <v-file-input label="请上传用例" outlined v-model="addItem.file" v-if="addItem.type == '文件'"></v-file-input>
+                    <v-textarea label="用例详情" v-model="addItem.data" v-if="addItem.type == '文本'"></v-textarea>
                     <v-text-field label="备注" v-model="addItem.remark"></v-text-field>
                 </v-container> 
             </v-card-text>
@@ -45,9 +49,9 @@
                 item-key="name"
                 show-select
                 class="elevation-1">
-                <template v-slot:[`item.operate`] = {item}>
+                <template v-slot:[`item.operate`] = {item}>     <!-- 当前点击行的信息 -->
                     <v-btn color='primary' text small>编辑</v-btn>
-                    <v-btn color='error' text small>删除</v-btn>
+                    <v-btn color='error' text small @click="deleteCase(item)">删除</v-btn>
 
                 </template>
             </v-data-table>
@@ -64,6 +68,7 @@ export default {
             addItem:{
                 name:'',
                 type:'',
+                file:'',
                 data:'',
                 remark:''
             },
@@ -100,19 +105,48 @@ export default {
     },
     methods:{
         addCase(){
-            console.log(this.addItem)
-            let post_data={
+            if(this.addItem=="文本"){
+                let post_data={
                 caseDate:this.addItem.data,
                 caseName:this.addItem.name,
                 remark:this.addItem.remark
+                }
+                this.$api.cases.createcaseByTest(post_data).then(res=>{
+                    console.log(res)
+                    this.addDialog = false  //关闭新建测试用例弹窗
+                })
+            }else if(this.addItem=="文件"){
+                let post_data=new FormData()
+                post_data.append('casefile',this.addItem.file)
+                post_data.append('caseDate',this.addItem.data)
+                post_data.append('caseName',this.addItem.name)
+                this.$api.cases.createcaseByFile(post_data).then(res=>{
+                    console.log(res)
+                })
             }
-            this.$api.cases.createcaseByTest(post_data).then(res=>{
-                console.log(res)
-                this.addDialog = false  //关闭新建测试用例弹窗
-            })
-        }
+            console.log(this.addItem)
+            // 关闭弹窗
+            this.addDialog=false
+            // 刷新页面
+            post_data={
+            pageNum:1,
+            pageSize:10,
 
-    }
+            },
+            this.$api.cases.getList(post_data).then(res=>{
+                console.log(res)
+                this.desserts =res.data.data.data
+            })           
+        },
+        deleteCase(item){
+            let post_data = {
+                caseId:item.id
+            }
+            this.$api.cases.deleteCase(post_data).then(res=>{
+                console.log(res)  
+            })
+        }   
+    },
 }
 </script>
 

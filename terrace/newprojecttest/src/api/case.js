@@ -11,8 +11,14 @@ const cases = {
     },
     createcaseByFile(params){
         // 文件形式添加测试用例的接口
-        return axios.post('testCase/text', params)
+        return axios.post('testCase/file',{
+            methods:'post',
+            data:params,
+            header:{'Content-type':'multipart/form-data'}
+        })
+    },
+    deleteCase(params){
+        return axios.delete('/testcase/'+params.caseID,params)
     }
-
 }
 export default cases
