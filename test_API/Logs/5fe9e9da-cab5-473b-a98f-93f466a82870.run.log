@@ -1,0 +1,393 @@
+2021-05-26 18:53:31.300 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: testcase description, TestCase ID: 5fe9e9da-cab5-473b-a98f-93f466a82870
+2021-05-26 18:53:31.301 | INFO     | httprunner.runner:__run_step:292 - run step begin: / >>>>>>
+2021-05-26 18:53:31.529 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 63136
+2021-05-26 18:53:31.529 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2021-05-26 18:53:31.529 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://music.163.com/
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"",
+    "sec-ch-ua-mobile": "?0",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "HRUN-Request-ID": "HRUN-5fe9e9da-cab5-473b-a98f-93f466a82870-411301"
+}
+cookies  : {}
+body     : None
+
+2021-05-26 18:53:31.566 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Wed, 26 May 2021 10:53:31 GMT",
+    "Content-Type": "text/html;charset=utf8",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "no-store, no-cache",
+    "Pragrma": "no-cache",
+    "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "Content-Security-Policy": "upgrade-insecure-requests",
+    "Content-Language": "en-US",
+    "X-Via": "MusicServer",
+    "X-From-Src": "123.58.117.246",
+    "Content-Encoding": "gzip",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf8
+content_type : text/html;charset=utf8
+body     : <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="baidu_ssp_verify" content="39f14c78c537175eb4b5192c72d002c1" />
+<meta name="baidu-site-verification" content="cNhJHKEzsD" />
+<meta name="360-site-verification" content="e37aef53e3922913e2a6a4682e479b84" />
+<meta name="sogou_site_verification" content="7zFjYjJaMq"/>
+<meta name="msvalidate.01" content="0CA3171633345524D8CBED5E95C75FFF" />
+<meta name="google-site-verification" content="rh2irYN2Lu028orAseOD3aXd5u7Eu1mqTfhoVaw2Ihg" />
+<meta name="s ... OMITTED 127451 CHARACTORS ...
+
+2021-05-26 18:53:31.567 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 227.06 ms, response_length: 0 bytes
+2021-05-26 18:53:31.567 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-05-26 18:53:31.568 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal text/html;charset=utf8(str)	==> pass
+2021-05-26 18:53:31.568 | INFO     | httprunner.runner:__run_step:304 - run step end: / <<<<<<
+
+2021-05-26 18:53:31.568 | INFO     | httprunner.runner:__run_step:292 - run step begin: /search/ >>>>>>
+2021-05-26 18:53:31.636 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 63136
+2021-05-26 18:53:31.637 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2021-05-26 18:53:31.637 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://music.163.com/search/
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"",
+    "sec-ch-ua-mobile": "?0",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Dest": "iframe",
+    "HRUN-Request-ID": "HRUN-5fe9e9da-cab5-473b-a98f-93f466a82870-411568"
+}
+cookies  : {}
+body     : None
+
+2021-05-26 18:53:31.649 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Wed, 26 May 2021 10:53:31 GMT",
+    "Content-Type": "text/html;charset=utf8",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "no-store, no-cache",
+    "Pragrma": "no-cache",
+    "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "Content-Security-Policy": "upgrade-insecure-requests",
+    "Content-Language": "en-US",
+    "X-Via": "MusicServer",
+    "X-From-Src": "123.58.117.246",
+    "Content-Encoding": "gzip",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf8
+content_type : text/html;charset=utf8
+body     : <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="baidu_ssp_verify" content="39f14c78c537175eb4b5192c72d002c1" />
+<meta name="baidu-site-verification" content="cNhJHKEzsD" />
+<meta name="360-site-verification" content="e37aef53e3922913e2a6a4682e479b84" />
+<meta name="sogou_site_verification" content="7zFjYjJaMq"/>
+<meta name="msvalidate.01" content="0CA3171633345524D8CBED5E95C75FFF" />
+<meta name="google-site-verification" content="rh2irYN2Lu028orAseOD3aXd5u7Eu1mqTfhoVaw2Ihg" />
+<meta name="s ... OMITTED 102335 CHARACTORS ...
+
+2021-05-26 18:53:31.649 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 68.01 ms, response_length: 0 bytes
+2021-05-26 18:53:31.649 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-05-26 18:53:31.650 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal text/html;charset=utf8(str)	==> pass
+2021-05-26 18:53:31.650 | INFO     | httprunner.runner:__run_step:304 - run step end: /search/ <<<<<<
+
+2021-05-26 18:53:31.650 | INFO     | httprunner.runner:__run_step:292 - run step begin: /weapi/cdns >>>>>>
+2021-05-26 18:53:31.690 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 63136
+2021-05-26 18:53:31.690 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2021-05-26 18:53:31.691 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://music.163.com/weapi/cdns?csrf_token=cf6bf2d687ce0941a560492f6812a04a
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"",
+    "sec-ch-ua-mobile": "?0",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "HRUN-Request-ID": "HRUN-5fe9e9da-cab5-473b-a98f-93f466a82870-411650",
+    "Content-Length": "408"
+}
+cookies  : {}
+body     : params=eXL4nArLxKDO8uiTR47RKWpQDw4KwOqRNqd%2BI0y%2FWo3xau0T8yz%2BCEs8ywZ6nqlZQTCTvOXqeSNoRi6BBjlzJcctsVKCxznwQBzAWSqAC8MdIKTItoBFF46SIFzdgfW5&encSecKey=a74a0fd80d889588010fa5e1b12da920009fbbaad9f72de9e5f933c05419e157eb38957ef59f25b7fbfe163e3d929b52e0f3edd141c8e40ce48e23d6fd027d7714c3d11ea8c794e5aca5bd73b5ce0da8d3b8596242a9d70a0585981c4d0c334094d32af5921a882ac9d20d93e7c21b2e830c8406c94e8e47efd75e5b5c4fe700
+
+2021-05-26 18:53:31.692 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Wed, 26 May 2021 10:53:31 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "119",
+    "X-HttpCache-Status": "NML-L3",
+    "MConfig-Bucket": "999999",
+    "Set-Cookie": "NMTID=00O2yu9uBuNCGFX7Ehblardq0jPYyoAAAF5qE7fqg; Max-Age=315360000; Expires=Sat, 24 May 2031 10:53:31 GMT; Path=/; Domain=music.163.com",
+    "cache-control": "no-cache, no-store",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "GW-Thread": "639203",
+    "GW-Time": "1622026411942",
+    "content-encoding": "gzip",
+    "X-Via": "MusicServer",
+    "X-From-Src": "123.58.117.246",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "NMTID": "00O2yu9uBuNCGFX7Ehblardq0jPYyoAAAF5qE7fqg"
+}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "data": [
+        [
+            "m701.music.126.net",
+            "m801.music.126.net"
+        ],
+        [
+            "v3.music.126.net"
+        ],
+        [
+            "m11.music.126.net"
+        ],
+        [
+            "v5.music.126.net"
+        ],
+        [
+            "m1.music.126.net",
+            "m2.music.126.net"
+        ],
+        [
+            "m3.music.126.net"
+        ],
+        [
+            "m8.music.126.net",
+            "m7.music.126.net"
+        ],
+        [
+            "v4.music.126.net"
+        ],
+        [
+            "m10.music.126.net"
+        ],
+        [
+            "sv1.music.126.net",
+            "sv2.music.126.net"
+        ]
+    ],
+    "code": 200
+}
+
+2021-05-26 18:53:31.692 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 39.59 ms, response_length: 0 bytes
+2021-05-26 18:53:31.692 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-05-26 18:53:31.692 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2021-05-26 18:53:31.693 | INFO     | httprunner.response:validate:246 - assert body.code equal 200(int)	==> pass
+2021-05-26 18:53:31.693 | INFO     | httprunner.runner:__run_step:304 - run step end: /weapi/cdns <<<<<<
+
+2021-05-26 18:53:31.693 | INFO     | httprunner.runner:__run_step:292 - run step begin: /weapi/copyright/pay_fee_message/config >>>>>>
+2021-05-26 18:53:31.731 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 63136
+2021-05-26 18:53:31.731 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2021-05-26 18:53:31.732 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://music.163.com/weapi/copyright/pay_fee_message/config?csrf_token=cf6bf2d687ce0941a560492f6812a04a
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"",
+    "sec-ch-ua-mobile": "?0",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "HRUN-Request-ID": "HRUN-5fe9e9da-cab5-473b-a98f-93f466a82870-411693",
+    "Cookie": "NMTID=00O2yu9uBuNCGFX7Ehblardq0jPYyoAAAF5qE7fqg",
+    "Content-Length": "408"
+}
+cookies  : {
+    "NMTID": "00O2yu9uBuNCGFX7Ehblardq0jPYyoAAAF5qE7fqg"
+}
+body     : params=yHf8c6V2gCyXeU%2BpPDYO4kitQ%2Ff3uHHspdoKC%2BzgUkO3lPFfA4ZxMM9IrA71ou1HJgYnkeVyHXrtOpdp6U6tkkgdYfQBQqEVLHSYhohNHoyxlkpaOZNjzRQYcfBloucX&encSecKey=66668716035ead6be98e1e9d2da90f3340e7106c40f3ebd25e8a9fefd73028a8e956b8e0a2eb02cc6a15d2f7a752ade11c9c1ec6f6e39743a485aaaf331c3705e35829f81bf97243decc30d5ba8a745006fa70015d7e8cdcb97861a8fd1386675f73e4fb105cfd32b792e7cf4280261ebd9c645270454da6cfd45eb373284ac4
+
+2021-05-26 18:53:31.732 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Wed, 26 May 2021 10:53:31 GMT",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Content-Length": "816",
+    "X-HttpCache-Status": "NML-L2-1",
+    "MConfig-Bucket": "999999",
+    "cache-control": "no-cache, no-store",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "content-encoding": "gzip",
+    "X-Via": "MusicServer",
+    "X-From-Src": "123.58.117.246",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/plain;charset=UTF-8
+body     : {
+    "code": 200,
+    "config": {
+        "vip": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u9700\u4ed8\u8d39\u4f7f\u7528\uff0c\u5f00\u901aVIP\u5373\u53ef\u81ea\u7531\u7545\u4eab",
+        "superQuality": "\u65e0\u635f\u54c1\u8d28\u9700\u4ed8\u8d39\u4f7f\u7528\uff0c\u5f00\u901aVIP\u5373\u53ef\u81ea\u7531\u7545\u4eab",
+        "commonQuality": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u8be5\u97f3\u8d28\u9700\u4ed8\u8d39\u4f7f\u7528\uff0c\u5f00\u901aVIP\u5373\u53ef\u81ea\u7531\u7545\u4eab",
+        "album": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u4e13\u8f91\u9700\u5355\u72ec\u4ed8\u8d39\uff0c\u8d2d\u4e70\u6570\u5b57\u4e13\u8f91\u5373\u53ef\u65e0\u9650\u7545\u4eab",
+        "unknow": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u8d44\u6e90\u9700\u4ed8\u8d39\u4f7f\u7528",
+        "headpic_download": "109951163349949354",
+        "headpic_quality": "109951163349949354",
+        "headpic_lossless": "109951163349949354",
+        "headpic_general": "109951163349949354",
+        "ipadvip": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u9700\u4ed8\u8d39\u4f7f\u7528\u3002\u60a8\u53ef\u4ee5\u5230iPhone/Android/\u7f51\u9875\u7248\u8d2d\u4e70\u540e\u4f7f\u7528",
+        "vip2": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u4ec5\u9650\u5f00\u901aVIP\u4f7f\u7528",
+        "commonQuality2link": "2\u5143\u8d2d\u4e70\u6b64\u5355\u66f2",
+        "vipCacheOnlyRenewLink": "\u5355\u66f2\u8d2d\u4e70",
+        "upgradeVipPro": "\u8be5\u6743\u76ca\u4ec5\u9650\u9ed1\u80f6VIP\u4f7f\u7528\uff0c\u7acb\u5373\u5347\u7ea7\u7545\u4eab\u7279\u6743",
+        "upgradeVipProButton": "\u5347\u7ea7\u4e3a\u9ed1\u80f6VIP",
+        "albumbutton": "\u8d2d\u4e70\u4e13\u8f91",
+        "downloadOnly": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u4ec5\u9650\u5f00\u901aVIP\u4f7f\u7528",
+        "vipbutton": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "unknowbutton": "\u73b0\u5728\u53bb\u8ba2\u8d2d",
+        "downloadOnlyButton": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "vipCacheOnlyRenew": "VIP\u5df2\u8fc7\u671f\uff0c\u5f53\u524d\u6b4c\u66f2\u65e0\u6cd5\u79bb\u7ebf\u64ad\u653e\uff0c\u5e94\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f00\u901aVIP\u5373\u53ef\u7ee7\u7eed\u4f7f\u7528",
+        "vipDownloadLink": "2\u5143\u8d2d\u4e70\u6b64\u5355\u66f2",
+        "superQualitybutton": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "entryNotVip": "\u4f1a\u5458\u4e2d\u5fc3",
+        "exclusive": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u4f1a\u5458\u4e13\u5c5e\u66f2\u5e93\u4ec5\u9650\u5f00\u901aVIP\u4e0b\u8f7d\uff0c\u5f00\u901a\u5373\u53ef\u7545\u4eab",
+        "buyVipPro": "\u8be5\u6743\u76ca\u4ec5\u9650\u9ed1\u80f6VIP\u4f7f\u7528\uff0c\u7acb\u5373\u5f00\u901a\u7545\u4eab\u7279\u6743",
+        "downloadOnlyLink": "\u5355\u66f2\u8d2d\u4e70",
+        "commonQuality2button": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "buyVipProButton": "\u5f00\u901a\u9ed1\u80f6VIP",
+        "vip2link": "2\u5143\u8d2d\u4e70\u6b64\u5355\u66f2",
+        "vipCacheOnlyRenewButton": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "commonQuality2": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u8be5\u97f3\u8d28\u4ec5\u9650\u5f00\u901aVIP\u4f7f\u7528",
+        "vipDownload": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u9700\u4ed8\u8d39\u4e0b\u8f7d\uff0c\u5f00\u901aVIP\u5373\u53ef\u7545\u4eab",
+        "vipCacheOnlyLink": "2\u5143\u8d2d\u4e70\u6b64\u5355\u66f2",
+        "vip2button": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "vipCacheOnlyButton": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "vipCacheOnly": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u9700\u4ed8\u8d39\u4e0b\u8f7d\uff0c\u4e0b\u8f7d\u540e\u53ef\u5728VIP\u6709\u6548\u671f\u5185\u79bb\u7ebf\u4f7f\u7528",
+        "ipadvipaudit": "\u7248\u6743\u65b9\u8981\u6c42\uff0c\u5f53\u524d\u6b4c\u66f2\u9700\u4ed8\u8d39\u4f7f\u7528\u3002\u60a8\u53ef\u4ee5\u5230iPhone\u7248\u7f51\u6613\u4e91\u97f3\u4e50\u8d2d\u4e70\u540e\u4f7f\u7528",
+        "vipDownloadButton": "\u5f00\u901a\u97f3\u4e50\u5305",
+        "payFeeTableName": "\u4f1a\u5458\u4e2d\u5fc3",
+        "entryVip": "\u6211\u7684\u4f1a\u5458"
+    }
+}
+
+2021-05-26 18:53:31.732 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 37.66 ms, response_length: 0 bytes
+2021-05-26 18:53:31.733 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-05-26 18:53:31.733 | INFO     | httprunner.response:validate:246 - assert headers."Content-Type" equal text/plain;charset=UTF-8(str)	==> pass
+2021-05-26 18:53:31.733 | INFO     | httprunner.runner:__run_step:304 - run step end: /weapi/copyright/pay_fee_message/config <<<<<<
+
+2021-05-26 18:53:31.733 | INFO     | httprunner.runner:__run_step:292 - run step begin: /weapi/pl/count >>>>>>
+2021-05-26 18:53:31.774 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 63136
+2021-05-26 18:53:31.775 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 8888
+2021-05-26 18:53:31.775 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://music.163.com/weapi/pl/count?csrf_token=cf6bf2d687ce0941a560492f6812a04a
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"",
+    "sec-ch-ua-mobile": "?0",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "HRUN-Request-ID": "HRUN-5fe9e9da-cab5-473b-a98f-93f466a82870-411734",
+    "Cookie": "NMTID=00O2yu9uBuNCGFX7Ehblardq0jPYyoAAAF5qE7fqg",
+    "Content-Length": "412"
+}
+cookies  : {
+    "NMTID": "00O2yu9uBuNCGFX7Ehblardq0jPYyoAAAF5qE7fqg"
+}
+body     : params=kaS8c0Zp3loCoiLIDBYRPHUDtLmYzYt1xXjZdz1%2F%2F3lMKf1zWRwlWVa5hofFM%2BhzMfVrplY8xWDcM4i1jkyCozrLTLAMRYry%2FRlvJndqMSmQEXrQWFBW2wZYFdq%2BfGNv&encSecKey=bdb46267944f5db8de48683dae9e074b2a937872fe7b439cf80033471bced2634835c04e7f7bb62d5fc8f9309ea6d19b8525f5d8caa141898bd8aacd40d46be5a23372e32fdd1fd7d210517051d85ec267969d9909f0c283e732e7384029f5009ce680d983030a9994ad1ec9327859f9c857ab45e4be7c06f9ee6c3ebd7b9e42
+
+2021-05-26 18:53:31.776 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Wed, 26 May 2021 10:53:32 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "0",
+    "MConfig-Bucket": "999999",
+    "cache-control": "no-cache, no-store",
+    "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "GW-Thread": "553677",
+    "GW-Time": "1622026412029",
+    "X-Via": "MusicServer",
+    "X-From-Src": "123.58.117.246",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : None
+content_type : application/json
+body     : 
+
+2021-05-26 18:53:31.776 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 40.65 ms, response_length: 0 bytes
+2021-05-26 18:53:31.776 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-05-26 18:53:31.776 | ERROR    | httprunner.response:validate:263 - assert headers."Content-Type" equal text/plain;charset=UTF-8(str)	==> fail
+check_item: headers."Content-Type"
+check_value: application/json(str)
+assert_method: equal
+expect_value: text/plain;charset=UTF-8(str)
+2021-05-26 18:53:31.776 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: https://music.163.com/weapi/pl/count
+method: POST
+headers: {'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"', 'sec-ch-ua-mobile': '?0', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'HRUN-Request-ID': 'HRUN-5fe9e9da-cab5-473b-a98f-93f466a82870-411734'}
+params: {'csrf_token': 'cf6bf2d687ce0941a560492f6812a04a'}
+data: {'params': 'kaS8c0Zp3loCoiLIDBYRPHUDtLmYzYt1xXjZdz1//3lMKf1zWRwlWVa5hofFM+hzMfVrplY8xWDcM4i1jkyCozrLTLAMRYry/RlvJndqMSmQEXrQWFBW2wZYFdq+fGNv', 'encSecKey': 'bdb46267944f5db8de48683dae9e074b2a937872fe7b439cf80033471bced2634835c04e7f7bb62d5fc8f9309ea6d19b8525f5d8caa141898bd8aacd40d46be5a23372e32fdd1fd7d210517051d85ec267969d9909f0c283e732e7384029f5009ce680d983030a9994ad1ec9327859f9c857ab45e4be7c06f9ee6c3ebd7b9e42'}
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+json: None
+
+====== response details ======
+status_code: 200
+headers: {'Server': 'nginx', 'Date': 'Wed, 26 May 2021 10:53:32 GMT', 'Content-Type': 'application/json', 'Content-Length': '0', 'MConfig-Bucket': '999999', 'cache-control': 'no-cache, no-store', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'GW-Thread': '553677', 'GW-Time': '1622026412029', 'X-Via': 'MusicServer', 'X-From-Src': '123.58.117.246', 'Connection': 'keep-alive'}
+body: ''
+
