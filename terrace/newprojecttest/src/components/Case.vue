@@ -9,7 +9,38 @@
                 <v-tab @click="$router.push({name:'User'})">用户管理</v-tab>
             </v-tabs>
         </template>
-        <v-dialog v-model="editDialog"></v-dialog>
+        <v-dialog v-model="editDialog" max-width="500px">
+            <v-card>
+                <v-card-title>修改测试用例</v-card-title>
+                <v-card-text>
+                    <v-container>
+                        <v-text-field label="用例名称" v-model="editItem.caseName"></v-text-field>
+                        <v-textarea label="用例详情" v-model="editItem.caseDate"></v-textarea>
+                        
+                    </v-container>
+                </v-card-text>
+                    <v-spacer></v-spacer>
+                    <v-but color="parimary" @click="confirmEdit()">确定</v-but>
+                    <v-but color="parimary" text @click="editDialog = false ">取消</v-but>
+            </v-card>
+        </v-dialog>
+        <v-dialog v-model="createdTask" max-width="500px">
+            <v-card>
+                <v-card-title>新增测试计划</v-card-title>
+                <v-card-text>
+                    <v-container>
+                        <v-text-field label="任务名称" v-model="addTask.name"></v-text-field>
+                        <v-textarea label="备注" v-model="addTask.remark"></v-textarea>
+                        
+                    </v-container>
+                </v-card-text>
+                <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn color="primary" @click="newTask()">确定</v-btn>
+                    <v-btn color="primary" text @click="createdTask = false ">取消</v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
 
 
         <v-dialog v-model="addDialog" max-width="500px">
@@ -34,8 +65,7 @@
         </v-card>
         </v-dialog>
 
-
-        <v-btn color='success' class='btn'>新增计划</v-btn>
+        <v-btn color='success' class='btn' @click="createdTask=true">新增计划</v-btn>
         <v-btn color='primary' class='btn' @click="addDialog = true">新建用例</v-btn>
         <p>
             <br>  <!--顶部空行 -->
@@ -50,7 +80,7 @@
                 show-select
                 class="elevation-1">
                 <template v-slot:[`item.operate`] = {item}>     <!-- 当前点击行的信息 -->
-                    <v-btn color='primary' text small>编辑</v-btn>
+                    <v-btn color='primary' text small @click="editCase(item)">编辑</v-btn>
                     <v-btn color='error' text small @click="deleteCase(item)">删除</v-btn>
 
                 </template>
@@ -64,7 +94,14 @@ export default {
     data(){
         return{
             addDialog:false,
+            editDialog:false,
+            createdTask:false,
             selectItem:['文本', '文件'],
+            editItem:{},
+            addTask:{
+                name:'',
+                remark:''
+            },
             addItem:{
                 name:'',
                 type:'',
@@ -137,6 +174,40 @@ export default {
                 console.log(res)
                 this.desserts =res.data.data.data
             })           
+        },
+        editCase(item){
+            this.editDialog=true
+            this.editItem=item
+        },
+        confirmEdit(item){
+            let post_data={
+                caseData:this.editItem.casedata,
+                caseName:ithis.editItem.casename,
+                id:this.editItem.id,
+                remark:this.editItem.remark
+                }
+            this.$api.cases.editCase(post_data).them(res=>{
+                console.log(res)
+                this.editDialog = false
+                post_data={
+                    pageNum:1,
+                    pageSize:10,
+
+                },
+                this.$api.cases.getList(post_data).then(res=>{
+                    console.log(res)
+                    this.desserts =res.data.data.data
+                })
+            })
+
+        },
+        newTask(){
+            let post_data={
+
+            }
+            this.$api.cases.createTask(post_data).then(res=>{
+                console.log(res)
+            })
         },
         deleteCase(item){
             let post_data = {
