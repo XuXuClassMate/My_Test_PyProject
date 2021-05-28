@@ -130,11 +130,11 @@ export default {
         }
     },
     created(){
-        post_data={
+        let post_data={
             pageNum:1,
             pageSize:10,
 
-        },
+        };
         this.$api.cases.getList(post_data).then(res=>{
             console.log(res)
             this.desserts =res.data.data.data
@@ -202,8 +202,18 @@ export default {
 
         },
         newTask(){
+            console.log(this.selected)
+            let caseIdList=[];
+            for (let i = 0; i < this.selected.length; i++) {
+                caseIdList.push(this.selected[i].id);              
+            }   
             let post_data={
-
+                caseIdList:caseIdList,
+                testTask:{
+                    name:this.addTask.name,
+                    remark:this.addTask.remark,
+                    testJenkinsId:1
+                }
             }
             this.$api.cases.createTask(post_data).then(res=>{
                 console.log(res)
