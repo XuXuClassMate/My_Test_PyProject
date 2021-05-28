@@ -7,7 +7,7 @@ from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 class TestCaseMusic163(HttpRunner):
 
-    config = Config("testcase description")
+    config = Config("testcase name")
 
     teststeps = [
         Step(
@@ -15,136 +15,12 @@ class TestCaseMusic163(HttpRunner):
             .get("https://music.163.com/")
             .with_headers(
                 **{
-                    "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-                    "sec-ch-ua-mobile": "?0",
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
-                    "Sec-Fetch-Site": "same-origin",
-                    "Sec-Fetch-Mode": "navigate",
-                    "Sec-Fetch-User": "?1",
-                    "Sec-Fetch-Dest": "document",
+                    "header": "header"
                 }
             )
             .validate()
             .assert_equal("status_code", 200)
             .assert_equal('headers."Content-Type"', "text/html;charset=utf8")
-        ),
-        Step(
-            RunRequest("/search/")
-            .get("https://music.163.com/search/")
-            .with_headers(
-                **{
-                    "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-                    "sec-ch-ua-mobile": "?0",
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
-                    "Sec-Fetch-Site": "same-origin",
-                    "Sec-Fetch-Mode": "navigate",
-                    "Sec-Fetch-Dest": "iframe",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "text/html;charset=utf8")
-        ),
-        Step(
-            RunRequest("/weapi/cdns")
-            .post("https://music.163.com/weapi/cdns")
-            .with_params(**{"csrf_token": "cf6bf2d687ce0941a560492f6812a04a"})
-            .with_headers(
-                **{
-                    "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-                    "sec-ch-ua-mobile": "?0",
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "Sec-Fetch-Site": "same-origin",
-                    "Sec-Fetch-Mode": "cors",
-                    "Sec-Fetch-Dest": "empty",
-                }
-            )
-            .with_data(
-                {
-                    "params": "eXL4nArLxKDO8uiTR47RKWpQDw4KwOqRNqd+I0y/Wo3xau0T8yz+CEs8ywZ6nqlZQTCTvOXqeSNoRi6BBjlzJcctsVKCxznwQBzAWSqAC8MdIKTItoBFF46SIFzdgfW5",
-                    "encSecKey": "a74a0fd80d889588010fa5e1b12da920009fbbaad9f72de9e5f933c05419e157eb38957ef59f25b7fbfe163e3d929b52e0f3edd141c8e40ce48e23d6fd027d7714c3d11ea8c794e5aca5bd73b5ce0da8d3b8596242a9d70a0585981c4d0c334094d32af5921a882ac9d20d93e7c21b2e830c8406c94e8e47efd75e5b5c4fe700",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
-            .assert_equal("body.code", 200)
-        ),
-        Step(
-            RunRequest("/weapi/copyright/pay_fee_message/config")
-            .post("https://music.163.com/weapi/copyright/pay_fee_message/config")
-            .with_params(**{"csrf_token": "cf6bf2d687ce0941a560492f6812a04a"})
-            .with_headers(
-                **{
-                    "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-                    "sec-ch-ua-mobile": "?0",
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "Sec-Fetch-Site": "same-origin",
-                    "Sec-Fetch-Mode": "cors",
-                    "Sec-Fetch-Dest": "empty",
-                }
-            )
-            .with_data(
-                {
-                    "params": "yHf8c6V2gCyXeU+pPDYO4kitQ/f3uHHspdoKC+zgUkO3lPFfA4ZxMM9IrA71ou1HJgYnkeVyHXrtOpdp6U6tkkgdYfQBQqEVLHSYhohNHoyxlkpaOZNjzRQYcfBloucX",
-                    "encSecKey": "66668716035ead6be98e1e9d2da90f3340e7106c40f3ebd25e8a9fefd73028a8e956b8e0a2eb02cc6a15d2f7a752ade11c9c1ec6f6e39743a485aaaf331c3705e35829f81bf97243decc30d5ba8a745006fa70015d7e8cdcb97861a8fd1386675f73e4fb105cfd32b792e7cf4280261ebd9c645270454da6cfd45eb373284ac4",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "text/plain;charset=UTF-8")
-        ),
-        Step(
-            RunRequest("/weapi/pl/count")
-            .post("https://music.163.com/weapi/pl/count")
-            .with_params(**{"csrf_token": "cf6bf2d687ce0941a560492f6812a04a"})
-            .with_headers(
-                **{
-                    "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-                    "sec-ch-ua-mobile": "?0",
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "Sec-Fetch-Site": "same-origin",
-                    "Sec-Fetch-Mode": "cors",
-                    "Sec-Fetch-Dest": "empty",
-                }
-            )
-            .with_data(
-                {
-                    "params": "kaS8c0Zp3loCoiLIDBYRPHUDtLmYzYt1xXjZdz1//3lMKf1zWRwlWVa5hofFM+hzMfVrplY8xWDcM4i1jkyCozrLTLAMRYry/RlvJndqMSmQEXrQWFBW2wZYFdq+fGNv",
-                    "encSecKey": "bdb46267944f5db8de48683dae9e074b2a937872fe7b439cf80033471bced2634835c04e7f7bb62d5fc8f9309ea6d19b8525f5d8caa141898bd8aacd40d46be5a23372e32fdd1fd7d210517051d85ec267969d9909f0c283e732e7384029f5009ce680d983030a9994ad1ec9327859f9c857ab45e4be7c06f9ee6c3ebd7b9e42",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "text/plain;charset=UTF-8")
-        ),
-        Step(
-            RunRequest("/weapi/privilege/message/mv")
-            .post("https://music.163.com/weapi/privilege/message/mv")
-            .with_params(**{"csrf_token": "cf6bf2d687ce0941a560492f6812a04a"})
-            .with_headers(
-                **{
-                    "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-                    "sec-ch-ua-mobile": "?0",
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "Sec-Fetch-Site": "same-origin",
-                    "Sec-Fetch-Mode": "cors",
-                    "Sec-Fetch-Dest": "empty",
-                }
-            )
-            .with_data(
-                {
-                    "params": "sAXxB02TpxIMi7PVAEABq+EpOnij4b0pfuD5TDT53AqbbOGDlg1oKSk2F7expsVoo5NGr7MGQf7BreuZfAPb5EDoJU/qWLwFz7pLZpJRgncYhttSIJzckSR/7U43EN6M",
-                    "encSecKey": "d5310bb613b24da7fb2cd65e09c3c748de60f38d5a84d0487071644be9bbceef4cab74780c535815e0881abf3a84ac8dca4524713961690486d3d37f467a07ac8aa3544744331b798efc55920f7f2d2e05e0fc2b8dd9edbe57b5dbfa776e9888782703490a47a63f050ecb3cf3dc290b22c3672332e2826e0ee2d9d5d8979075",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "text/plain;charset=UTF-8")
         ),
     ]
 
