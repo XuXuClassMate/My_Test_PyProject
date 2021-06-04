@@ -25,19 +25,6 @@ export default {
 
     },
     mounted(){
-        // // 方法
-        // function initEcharts () {
-        //     // 新建一个promise对象
-        //     let newPromise = new Promise((resolve) => {
-        //         resolve()
-        //     })
-        //     //然后异步执行echarts的初始化函数
-        //     newPromise.then(() => {
-        //         //	此dom为echarts图标展示dom
-        //         echarts.init(DOm)
-        //     })
-        // };
-
         var echarts = require('echarts');
         // 基于准备好的dom，初始化echarts实例
         // var myChart = echarts.init(document.getElementById('mian'))
