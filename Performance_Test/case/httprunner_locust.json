@@ -1,0 +1,1 @@
+{  "config": {    "name":"test_name",    "base_url": ""  },  "teststeps": [    {      "name": "testcase_name",      "request": {        "method": "GET",        "url": "http://www.baidu.com"      }    }  ]}

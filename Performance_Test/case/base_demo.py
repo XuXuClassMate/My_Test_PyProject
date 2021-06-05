@@ -50,4 +50,6 @@ class Mobile_user(HttpUser):
 
 '''
 locust基本运行---locust -f base_demo.py -H url
+不启动界面 --- locust -f base_demo.py --headless -u 用户数量 -r 每秒启动的用户数 -H url -t 运行时间
+--csv 结果文件
 '''
