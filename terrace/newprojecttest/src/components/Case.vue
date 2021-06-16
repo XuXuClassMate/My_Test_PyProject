@@ -155,7 +155,7 @@ export default {
             }else if(this.addItem=="文件"){
                 let post_data=new FormData()
                 post_data.append('casefile',this.addItem.file)
-                post_data.append('caseDate',this.addItem.data)
+                post_data.append('caseDate',this.addItem.remark)
                 post_data.append('caseName',this.addItem.name)
                 this.$api.cases.createcaseByFile(post_data).then(res=>{
                     console.log(res)
@@ -182,7 +182,8 @@ export default {
         confirmEdit(item){
             let post_data={
                 caseData:this.editItem.casedata,
-                caseName:ithis.editItem.casename,
+                caseName:this.editItem.casename,
+                caseType:this.editItem.casetype,
                 id:this.editItem.id,
                 remark:this.editItem.remark
                 }
