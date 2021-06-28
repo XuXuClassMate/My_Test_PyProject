@@ -14,10 +14,15 @@ def test_jenkins():
         'http://localhost:8080/',
         username = "admin",
         # 需要用户管理添加token
-        password = "11b08f5bb2929885569dbc97d6232cd310"
+        password = "11ec796312b80c8841f4eef5394b74af26",
+        timeout = 300
         )
+    print('-----')
     print(jenkins.keys())
     print(jenkins.version)
     print(jenkins.jobs.keys())
     print(jenkins.views.keys())
-    jenkins.jobs.build("0412newjob")
+    # jenkins.jobs.build('http:/10.78.16.251:8080/0412newjob')
+    # print(jenkins.jobs['http:/10.78.16.251:8080/0412newjob'])
+    print(jenkins.views['all'])
+    print(jenkins.items())
