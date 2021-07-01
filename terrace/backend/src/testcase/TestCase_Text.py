@@ -95,7 +95,7 @@ class Suite(db.Model):
     testcase = db.Column(db.String(1000), unique = False, nullable = True)
 
     def __repr__(self):
-        return 'TestCase %r' % self.id
+        return 'Suite %r' % self.id
 
 
 class SuiteService:
@@ -108,6 +108,17 @@ class SuiteService:
         else:
             suites = Suite.query.all()
             return [str(suite) for suite in suites]
+
+    def post(self):
+        suite = Suite(
+            name = request.json.get('name'),
+            testcases = json.dumps(request.json.get('testcases'))
+            )
+        db.session.add(suite)
+        db.session.commit()
+
+        suites = Suite.query.all()
+        return [str(suite) for suite in suites]
 
 
 class ExcutionService(Resource):
