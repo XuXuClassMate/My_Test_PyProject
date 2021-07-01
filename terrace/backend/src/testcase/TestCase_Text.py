@@ -11,12 +11,19 @@ from flask import Flask
 from flask import request
 from flask_restful import Resource, Api
 from flask_sqlalchemy import SQLAlchemy
+from jenkinsapi.jenkins import Jenkins
 
 app = Flask(__name__)
 api = Api(app)
 app.config['AQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://lagou5:hogwarts@stuq.ceshiren.com:23306/lagou5db?charset' \
                                         '=utf8mb4'
 db = SQLAlchemy(app)
+jenkins = Jenkins(
+    'http://localhost:8080/',
+    username = "admin",
+    # 需要用户管理添加token
+    password = "11ec796312b80c8841f4eef5394b74af26"
+    )
 
 
 class TestCase_Text(db.Model):
@@ -35,11 +42,11 @@ class TestCase_Text(db.Model):
 class TestCaseTextService(Resource):
     def get(self):
         testcase_id = request.args.get('id', None)
+        app.logger.info({'id': testcase_id})
         if testcase_id:
             for item in testcase_id:
                 if item[testcase_id] == item:
                     return item
-
             return {}
         else:
             testcases = TestCase_Text.query.all()
@@ -82,8 +89,43 @@ class TestCaseTextService(Resource):
         return [str(testcase) for testcase in testcases]
 
 
-api.add_resource(TestCaseTextService, '/testCase/text')
+class Suite(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(80), unique = False, nullable = False)
+    testcase = db.Column(db.String(1000), unique = False, nullable = True)
 
+    def __repr__(self):
+        return 'TestCase %r' % self.id
+
+
+class SuiteService:
+    def get(self):
+        id = request.args.get('id', None)
+        app.logger.info({'id': id})
+        if id:
+            suite = Suite.query.filter_by(id = id).first()
+            return str(suite)
+        else:
+            suites = Suite.query.all()
+            return [str(suite) for suite in suites]
+
+
+class ExcutionService(Resource):
+    def post(self):
+        testcase_id = request.json.get('testcase_id')
+        jenkins.jobs['testcase_id'].invoke(build_params = {'testcase_id': testcase_id})
+
+
+class Result:
+    pass
+
+
+class ResultService:
+    pass
+
+
+api.add_resource(TestCaseTextService, '/testCase/text')
+api.add_resource(ExcutionService, '/execution')
 
 if __name__ == '__main__':
     app.run(debug = True)

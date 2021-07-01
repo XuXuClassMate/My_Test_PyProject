@@ -14,8 +14,7 @@ def test_jenkins():
         'http://localhost:8080/',
         username = "admin",
         # 需要用户管理添加token
-        password = "11ec796312b80c8841f4eef5394b74af26",
-        timeout = 300
+        password = "11ec796312b80c8841f4eef5394b74af26"
         )
     print('-----')
     print(jenkins.keys())
