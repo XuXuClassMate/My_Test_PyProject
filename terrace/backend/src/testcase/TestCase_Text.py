@@ -26,6 +26,7 @@ jenkins = Jenkins(
     )
 
 
+# 测试用例的管理
 class TestCase_Text(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     # 测试名称 80个字符，不是唯一，不能为空
@@ -89,13 +90,30 @@ class TestCaseTextService(Resource):
         return [str(testcase) for testcase in testcases]
 
 
+'''
+测试套件  一个套件包括一个带有顺序的测试用例列表
+更复杂的情况是一个套件，可以包含自套件，自套件之间具备穿并行关系
+xUnit概念
+pytest dir => [test_1.py::test_a, test_1.py::test_b,test_2.py::test_c]
+suite test_python.py
+suite [test_1.py::test_a, test_1.py::test_b,test_2.py::test_c]
+'''
+
+
 class Suite(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(80), unique = False, nullable = False)
-    testcase = db.Column(db.String(1000), unique = False, nullable = True)
+    testcases = db.Column(db.String(1000), unique = False, nullable = True)
+
+    def as_dict(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'testcases': json.loads(self.testcases)
+            }
 
     def __repr__(self):
-        return 'Suite %r' % self.id
+        return f'<Suite id={self.id}    {self.name}>'
 
 
 class SuiteService:
@@ -107,7 +125,7 @@ class SuiteService:
             return str(suite)
         else:
             suites = Suite.query.all()
-            return [str(suite) for suite in suites]
+            return [Suite.as_dict() for suite in suites]
 
     def post(self):
         suite = Suite(
@@ -121,17 +139,26 @@ class SuiteService:
         return [str(suite) for suite in suites]
 
 
+# 根据套件的ID，渠道对应的存在的套件，并把太监的数据发给jenkins进行执行
 class ExcutionService(Resource):
     def post(self):
-        testcase_id = request.json.get('testcase_id')
-        jenkins.jobs['testcase_id'].invoke(build_params = {'testcase_id': testcase_id})
+        suite_id = request.json.get('suite_id')
+        suite = Suite.query.filter_by(id = suite_id)
+
+        jenkins.jobs['testcase_id'].invoke(
+            build_params = {
+                'suite': json.dumps(suite.as_dict()),
+                'command': f'git clone https://github.com/yanxuping/My_Test_Project.git .; pytest {suite.testcases}'
+                }
+            )
 
 
 class Result:
     pass
 
 
-class ResultService:
+# jenkins通过curl命令或者其他的客户端工具，把测试结果，主要是junit.xml allure报告上传
+class ResultService(Resource):
     pass
 
 
