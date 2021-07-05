@@ -163,6 +163,7 @@ class ResultService(Resource):
 
 
 api.add_resource(TestCaseTextService, '/testCase/text')
+api.add_resource(SuiteService, '/suite')
 api.add_resource(ExcutionService, '/execution')
 
 if __name__ == '__main__':
