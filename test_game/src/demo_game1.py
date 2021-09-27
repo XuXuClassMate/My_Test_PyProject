@@ -11,16 +11,19 @@ class game:
     while True:
         Computer = random.randint(1, 3)
         User = int(input('请输入你的选择：'))
-        if 0 <= User <= 3:
-            if User == 0:
-                print('游戏结束')
-                break
-            elif User > Computer:
-                print('玩家获胜')
-            elif User < Computer:
-                print('电脑获胜')
-            elif User == Computer:
-                print('平局')
-        else:
+        if len（User）== 1：
+        	if 0 <= User <= 3:
+                if User == 0:
+                    print('游戏结束')
+                    break
+                elif User > Computer:
+                    print('玩家获胜')
+                elif User < Computer:
+                    print('电脑获胜')
+                elif User == Computer:
+                    print('平局')
+            else:
+                print('输入不合规，请重新开始')
+		else：
             print('输入不合规，请重新开始')
 
