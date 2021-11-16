@@ -14,6 +14,7 @@ def single_thread():
     log.echolog("single_thread end")
 
 
+# 多线程爬虫
 def multi_thread():
     threads = []
     for url in blog_spider.urls:
@@ -31,11 +32,11 @@ if __name__ == '__main__':
     start = time.time()
     single_thread()
     end = time.time()
-    print(f"start time:{start}\n end time:{end}\n single thread cost:{end-start}seconds")
-# 运行结果：
-# starttime: 1637055125.735268
-# endtime: 1637055165.641379
-# singlethreadcost: 39.906111001968384seconds
+    print(f"start time:{start}\n end time:{end}\n single thread cost:{end - start}seconds")
+    # 运行结果：
+    # starttime: 1637055125.735268
+    # endtime: 1637055165.641379
+    # singlethreadcost: 39.906111001968384seconds
 
     start = time.time()
     multi_thread()
@@ -45,4 +46,3 @@ if __name__ == '__main__':
 # start time:1637055165.641442
 #  end time:1637055178.166017
 #  multi thread cost:12.524574995040894seconds
-
