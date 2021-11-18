@@ -8,6 +8,7 @@ from test_API.testing.Logfile import LogFile
 log = LogFile()
 
 
+# 多线程之间的通讯例子：三个线程爬虫两个线程消费
 def do_craw(url_queue: queue.Queue, html_queue: queue.Queue):
     while True:
         url = url_queue.get()
@@ -43,6 +44,6 @@ if __name__ == '__main__':
 
     fout = open("0.2data.txt", "w")
     for idx in range(2):
-        t = threading.Thread(target=do_craw, args=(url_queue, fout),
+        t = threading.Thread(target=do_parse, args=(url_queue, fout),
                              name=f"parse{idx}")
         t.start()
