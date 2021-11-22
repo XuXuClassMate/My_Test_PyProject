@@ -3,7 +3,7 @@ allure-python-commons==2.8.18
 aniso8601==9.0.1
 appdirs==1.4.4
 Appium-Python-Client==1.0.2
-attrs==20.2.0
+attrs~=21.2.0
 black==19.10b0
 certifi~=2021.10.8
 chardet==3.0.4
@@ -88,3 +88,4 @@ zope.interface==5.2.0
 matplotlib~=3.4.2
 beautifulsoup4~=4.10.0
 pip~=21.3.1
+aiohttp~=3.8.1

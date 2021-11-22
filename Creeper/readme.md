@@ -13,3 +13,9 @@
 6、[多线程和多进程学习](./study/06.thread_process_cpu_bound.py)
 
 ![单线程多线程多进程运行](./Logs/单线程多线程多进程运行.png)
+
+7、[针对CPU密集型计算使用多进程process,进程间的数据共享方法](./study/07.flask_process.py)
+
+8、[使用协程进行爬虫速度会更快0.28秒](./study/08.async_spider.py)
+
+9、[并发使用协程方法Semaphore](./study/09.async_spider_semaphore.py)
