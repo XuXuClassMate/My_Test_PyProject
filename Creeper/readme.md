@@ -19,3 +19,9 @@
 8、[使用协程进行爬虫速度会更快0.28秒](./study/08.async_spider.py)
 
 9、[并发使用协程方法Semaphore](./study/09.async_spider_semaphore.py)
+
+
+
+_XuXuClassMate_
+
+_2021、11、23_
