@@ -6,7 +6,10 @@
 # @Time : 2022/1/18 8:57 上午
 
 
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14]
+lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14]
+
+listb = [1, 5, 3, 7, 4, 2, 9, 6]
+
 
 x = int(input("请输入查找的数据："))
 
@@ -23,10 +26,21 @@ def ages(alist):
         else:
             end = mid - 1
     if start <= end:
-        print(f"找到你数据的元素了{alist[mid] + 1}")
+        print(f"找到你数据的元素了{alist[mid + 1]}")
     else:
         print("没找到")
 
 
+def bubb(alist):
+    n = len(alist) - 1
+    for j in range(0, n):
+        for i in range(0, n - j):
+            if alist[i] > alist[i + 1]:
+                alist[i], alist[i + 1] = alist[i + 1], alist[i]
+    return alist
+
+
 if __name__ == '__main__':
-    ages(lista)
+    print(ages(lista))
+    print(bubb(listb))
+
