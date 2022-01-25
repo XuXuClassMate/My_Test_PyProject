@@ -10,8 +10,13 @@ lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14]
 
 listb = [1, 5, 3, 7, 4, 2, 9, 6]
 
-
 x = int(input("请输入查找的数据："))
+
+
+def select(alist):
+    for i in alist:
+        if i == x:
+            print(f"select:你查找的数据在列表中的下标是{i}")
 
 
 def ages(alist):
@@ -26,9 +31,9 @@ def ages(alist):
         else:
             end = mid - 1
     if start <= end:
-        print(f"找到你数据的元素了{alist[mid + 1]}")
+        print(f"ages：找到你数据的元素了{alist[mid + 1]}个元素")
     else:
-        print("没找到")
+        print("ages：没找到")
 
 
 def bubb(alist):
@@ -41,6 +46,6 @@ def bubb(alist):
 
 
 if __name__ == '__main__':
+    print(select(lista))
     print(ages(lista))
     print(bubb(listb))
-
