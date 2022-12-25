@@ -2,11 +2,11 @@
 # 我的测试项目
 ### 体验自己的网站
 
- ![我的域名认证](./Creeper/study/xuxuclassmate.xyz.certificate.jpg)
+ ![我的域名认证](./Creeper/study/xuxuclassmate.cn_certificate.png)
  
 _我将会在上面搭建长时间运行的CI/CD、数据库等、web页面等_
 
-- [It's my web](./terrace/myweb) ----->[URL：xuxuclassmate.xyz](https://www.xuxuclassmate.xyz)
+- [It's my web](./terrace/myweb) ----->[URL：xuxuclassmate.cn](https://www.xuxuclassmate.cn)
 
 ![webpage for me](./terrace/myweb/img/related/demo.jpg)
 #
