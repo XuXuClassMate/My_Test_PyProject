@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 # @Author : XuXu ClassMate
-# @File : __init__.py.py 
+# @File : __init__.py
 # username： xuxudemac
 # @IDE: PyCharm
-# @Time : 2024/1/22 19:22 
+# @Time : 2024/1/22 19:23

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 # @Author : XuXu ClassMate
-# @File : Logs.py
+# @File : LogFile.py
 # username： xuxudemac
 # @IDE: PyCharm
 # @Time : 2024/1/22 19:23
@@ -10,10 +10,10 @@ import os
 from datetime import datetime
 
 
-class Logs(object):
+class LogFile(object):
     def __init__(self):
         self._foldername = datetime.now().strftime('%Y-%m-%d')
-        self._logfilename = "logs-" + datetime.now().strftime('%Y-%m-%d-%H') + ".txt"
+        self._logfilename = "logs-" + datetime.now().strftime('%Y-%m-%d-%H') + ".log"
 
     def echolog(self, echocontent: str):
         path = os.listdir("..")

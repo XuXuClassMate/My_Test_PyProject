@@ -1,0 +1,3 @@
+2024-01-26 20:21:15  2365 || post func request：http://xuxuclassmate.cn:12345/dolphinscheduler/projects
+2024-01-26 20:21:15  2368 || post func kwargs：{'data': {'projectName': 'test_project', 'description': '', 'userName': 'admin'}}
+2024-01-26 20:21:15  2371 || post func response：{'code': 10019, 'msg': '项目名称[test_project]已存在', 'data': None, 'failed': True, 'success': False}
