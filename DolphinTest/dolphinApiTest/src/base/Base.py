@@ -31,7 +31,6 @@ class Base:
                                     data={"userName": self.username, "userPassword": self.password})
             if request.status_code == 200:
                 SessionId = request.json()['data']['sessionId']
-                print("get_session运行了一次", SessionId)
                 return SessionId
             else:
                 print("get session error")
