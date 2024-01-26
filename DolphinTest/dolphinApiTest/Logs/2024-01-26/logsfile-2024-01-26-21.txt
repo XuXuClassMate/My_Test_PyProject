@@ -1,0 +1,4 @@
+2024-01-26 21:52:29  9515 || post func request：http://xuxuclassmate.cn:12345/dolphinscheduler/projects
+2024-01-26 21:52:29  9520 || post func kwargs：{'data': {'projectName': 'test_project', 'description': '', 'userName': 'admin'}}
+2024-01-26 21:52:29  9522 || post func response：{'code': 0, 'msg': '成功', 'data': {'id': 27, 'userId': 1, 'userName': 'admin', 'code': 12396384013024, 'name': 'test_project', 'description': '', 'createTime': '2024-01-26 13:52:30', 'updateTime': '2024-01-26 13:52:30', 'perm': 0, 'defCount': 0, 'instRunningCount': 0}, 'failed': False, 'success': True}
+2024-01-26 21:52:29  9960 || {'name': 'test_project', 'id': 27, 'code': 12396384013024}
