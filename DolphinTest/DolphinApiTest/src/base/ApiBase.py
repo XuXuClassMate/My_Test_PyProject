@@ -6,7 +6,7 @@
 # @Time : 2024/1/24 14:39
 import requests
 from DolphinTest.DolphinConfig import DolphinConfig
-from DolphinTest.logs.LogFile import LogFile
+from DolphinTest.logsfile.LogFile import Logs
 
 
 class ApiBase(DolphinConfig):
@@ -14,7 +14,7 @@ class ApiBase(DolphinConfig):
 
     def __init__(self):
         super().__init__()
-        self.log = LogFile("DolphinApiTest")
+        self.log = Logs("DolphinApiTest")
         ApiBase.SessionId = self.getSession()
 
     def getSession(self):
@@ -22,9 +22,7 @@ class ApiBase(DolphinConfig):
             request = requests.post(self.getBaseUrl() + "/login",
                                     data={"userName": self.getUserName(), "userPassword": self.getPassWord()})
             if request.status_code == 200:
-                print("获取前：" + str(ApiBase.SessionId))
                 SessionId = request.json()['data']['sessionId']
-                print("获取后：" + str(SessionId))
                 return SessionId
             else:
                 print("get session error")

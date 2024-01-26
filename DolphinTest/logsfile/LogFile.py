@@ -15,7 +15,7 @@ class Logs(object):
     def __init__(self, dir_name: str):
         self._foldername(dir_name)
         self._foldername = datetime.now().strftime('%Y-%m-%d')
-        self._logfilename = "logs-" + datetime.now().strftime('%Y-%m-%d-%H') + ".txt"
+        self._logfilename = "logs-" + datetime.now().strftime('%Y-%m-%d-%H') + ".log"
 
     @staticmethod
     def _foldername(dir_name):

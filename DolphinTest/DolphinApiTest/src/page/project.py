@@ -6,7 +6,7 @@
 # @Time : 2024/1/26 10:22
 import pytest
 
-from DolphinTest.DolphinApiTest.src.ApiBase import ApiBase
+from DolphinTest.DolphinApiTest.src.base.ApiBase import ApiBase
 
 
 class Project(ApiBase):

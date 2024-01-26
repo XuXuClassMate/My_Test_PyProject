@@ -5,7 +5,6 @@
 # @IDE: PyCharm
 # @Time : 2024/1/26 11:41
 import pytest
-import pytest_assume.plugin
 
 from DolphinTest.DolphinApiTest.src.page import project
 
