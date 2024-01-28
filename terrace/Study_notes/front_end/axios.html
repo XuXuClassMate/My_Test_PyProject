@@ -59,7 +59,7 @@
         mounted(){
             axios
                 .get('data.json')
-                .then(response=>this.info=response.data);
+                .then(self=>this.info=response.data);
                 //http-server插件下载运行
         }
     })

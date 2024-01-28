@@ -4,6 +4,7 @@
 # username： xuxudemac
 # @IDE: PyCharm
 # @Time : 2024/1/24 14:39
+import pytest
 import requests
 from DolphinTest.DolphinConfig import DolphinConfig
 from DolphinTest.logsfile.LogFile import Logs
@@ -30,61 +31,77 @@ class ApiBase(DolphinConfig):
             return ApiBase.SessionId
 
     """
-    get function 
+    GET function 
     parameter： url, params
     """
-    def get(self, url: str, **kwargs):
+
+    def GET(self, url: str, **kwargs):
         response = requests.get(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
-        self.log.echolog("get func request：" + str(self.getBaseUrl()) + str(url))
+        self.log.echolog("GET func request：" + str(self.getBaseUrl()) + str(url))
         if kwargs is not None:
-            self.log.echolog("get func kwargs：" + str(kwargs))
+            self.log.echolog("GET func kwargs：" + str(kwargs))
         else:
             pass
-        self.log.echolog("get func response：" + str(response.json()))
+        self.log.echolog("GET func response：" + str(response.json()))
         return response
 
     """
-    post function 
-    parameter： url, data, json
-    """
-    def post(self, url: str, **kwargs):
-        response = requests.post(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
-        self.log.echolog("post func request：" + str(self.getBaseUrl()) + str(url))
-        if kwargs is not None:
-            self.log.echolog("post func kwargs：" + str(kwargs))
-        else:
-            pass
-        self.log.echolog("post func response：" + str(response.json()))
-        return response
-
-    """
-    put function 
-    parameter： url, data, json
-    """
-    def put(self, url: str, **kwargs):
-        response = requests.post(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
-        self.log.echolog("put func request：" + str(self.getBaseUrl()) + str(url))
-        if kwargs is not None:
-            self.log.echolog("put func kwargs：" + str(kwargs))
-        else:
-            pass
-        self.log.echolog("put func response：" + str(response.json()))
-        return response
-
-    """
-    delete function 
+    POST function 
     parameter： url, data, json
     """
 
-    def delete(self, url: str, **kwargs):
+    def POST(self, url: str, **kwargs):
         response = requests.post(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
-        self.log.echolog("delete func request：" + str(self.getBaseUrl()) + str(url))
+        self.log.echolog("POST func request：" + str(self.getBaseUrl()) + str(url))
         if kwargs is not None:
-            self.log.echolog("delete func kwargs：" + str(kwargs))
+            self.log.echolog("POST func kwargs：" + str(kwargs))
         else:
             pass
-        self.log.echolog("delete func response：" + str(response.json()))
+        self.log.echolog("POST func response：" + str(response.json()))
         return response
+
+    """
+    PUT function 
+    parameter： url, data, json
+    """
+
+    def PUT(self, url: str, **kwargs):
+        response = requests.post(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
+        self.log.echolog("PUT func request：" + str(self.getBaseUrl()) + str(url))
+        if kwargs is not None:
+            self.log.echolog("PUT func kwargs：" + str(kwargs))
+        else:
+            pass
+        self.log.echolog("PUT func response：" + str(response.json()))
+        return response
+
+    """
+    DELETE function 
+    parameter： url, data, json
+    """
+
+    def DELETE(self, url: str, **kwargs):
+        response = requests.post(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
+        self.log.echolog("DELETE func request：" + str(self.getBaseUrl()) + str(url))
+        if kwargs is not None:
+            self.log.echolog("DELETE func kwargs：" + str(kwargs))
+        else:
+            pass
+        self.log.echolog("DELETE func response：" + str(response.json()))
+        return response
+
+    def ApiAssert(self, response: object):
+        if response.status_code in (requests.codes.ok, 201):
+            self.log.echolog("HTTP Success!")
+            result = response.json()
+            if pytest.assume(result["code"] == 0):
+                self.log.echolog("API code Success")
+                return result
+            else:
+                self.log.echolog("API an error occurred. Status code: " + str(result["code"]))
+                self.log.echolog("Error: " + str(result))
+        else:
+            self.log.echolog("HTTP an error occurred. Status code: " + str(response.status_code))
 
     def getUserName(self):
         return self.userName
