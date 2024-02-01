@@ -4,8 +4,12 @@
 # username： xuxudemac
 # @IDE: PyCharm
 # @Time : 2024/1/24 14:39
+import json
+
 import pytest
 import requests
+from jsonpath import jsonpath
+from jsonpath_ng import parse
 from DolphinTest.DolphinConfig import DolphinConfig
 from DolphinTest.logsfile.LogFile import Logs
 
@@ -66,7 +70,7 @@ class ApiBase(DolphinConfig):
     """
 
     def PUT(self, url: str, **kwargs):
-        response = requests.post(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
+        response = requests.put(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
         self.log.echolog("PUT func request：" + str(self.getBaseUrl()) + str(url))
         if kwargs is not None:
             self.log.echolog("PUT func kwargs：" + str(kwargs))
@@ -81,7 +85,7 @@ class ApiBase(DolphinConfig):
     """
 
     def DELETE(self, url: str, **kwargs):
-        response = requests.post(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
+        response = requests.delete(self.getBaseUrl() + url, headers=self.getHeaders(), **kwargs)
         self.log.echolog("DELETE func request：" + str(self.getBaseUrl()) + str(url))
         if kwargs is not None:
             self.log.echolog("DELETE func kwargs：" + str(kwargs))
@@ -90,13 +94,16 @@ class ApiBase(DolphinConfig):
         self.log.echolog("DELETE func response：" + str(response.json()))
         return response
 
-    def ApiAssert(self, response: object):
+    def ApiAssert(self, response: object, path: str = None):
         if response.status_code in (requests.codes.ok, 201):
             self.log.echolog("HTTP Success!")
             result = response.json()
             if pytest.assume(result["code"] == 0):
                 self.log.echolog("API code Success")
-                return result
+                if path is not None:
+                    return self.getJsonData(json_data=result, path=path)
+                else:
+                    return result
             else:
                 self.log.echolog("API an error occurred. Status code: " + str(result["code"]))
                 self.log.echolog("Error: " + str(result))
@@ -120,3 +127,11 @@ class ApiBase(DolphinConfig):
             'Sessionid': ApiBase.SessionId
         }
         return Header
+
+    def getJsonData(self, json_data, path):
+        jsonpath_expr = parse(path)
+        matches = [match.value for match in jsonpath_expr.find(json_data)]
+        if not matches:
+            self.log.echolog("No match found: " + path)
+        else:
+            return matches
