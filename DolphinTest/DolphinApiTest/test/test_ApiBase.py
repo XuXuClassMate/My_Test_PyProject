@@ -39,5 +39,6 @@ class TestApiBase:
                 "success": true
             }
 
-        result = self.apibase.getJsonData(date, "$.data.[id, name, code]")
+        result = self.apibase.getJsonData(date, "$.data.[id,name,code]")
+        print(result)
         return result
