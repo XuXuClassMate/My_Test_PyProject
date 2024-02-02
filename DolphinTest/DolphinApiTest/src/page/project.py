@@ -17,11 +17,11 @@ class Project(ApiBase):
         }
         data.update(kwargs)
         request = self.POST("/projects", data=data)
-        result = self.ApiAssert(request)
+        result = self.ApiAssert(request,"$.data.[id,name,code]")
         result_data = {
-            'name': result['data']['name'],
-            'id': result['data']['id'],
-            'code': result['data']['code']
+            'id': result[0],
+            'name': result[1],
+            'code': result[2]
         }
         self.log.echolog("project create api result data: " + str(result_data))
         return result_data
@@ -34,11 +34,11 @@ class Project(ApiBase):
         }
         param.update(kwargs)
         request = self.GET("/projects", params=param)
-        result = self.ApiAssert(request)
+        result = self.ApiAssert(request,"$.data.totalList[:1].[id,name,code]")
         result_data = {
-            'name': result['data']["totalList"][0]['name'],
-            'id': result['data']["totalList"][0]['id'],
-            'code': result['data']["totalList"][0]['code']
+            'id': result[0],
+            'name': result[1],
+            'code': result[2]
         }
         self.log.echolog("project search api result data: " + str(result_data))
         return result_data
@@ -51,11 +51,11 @@ class Project(ApiBase):
         }
         data.update(kwargs)
         request = self.PUT("/projects/" + str(projectCode), data=data)
-        result = self.ApiAssert(request)
+        result = self.ApiAssert(request, "$.data.[:1].[id,name,code]")
         result_data = {
-            'name': result['data']['name'],
-            'id': result['data']['id'],
-            'code': result['data']['code']
+            'id': result[0],
+            'name': result[1],
+            'code': result[2]
         }
         self.log.echolog("project update api result data: " + str(result_data))
         return result_data

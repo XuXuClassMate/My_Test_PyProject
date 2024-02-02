@@ -14,7 +14,7 @@ class TestProject:
         self.project = project.Project()
 
     def teardown_class(self):
-        code = self.project.search('test_project_update')
+        code = self.project.search('test_project')
         assert self.project.delete(projectCode=code["code"])
 
     def test_create(self):
