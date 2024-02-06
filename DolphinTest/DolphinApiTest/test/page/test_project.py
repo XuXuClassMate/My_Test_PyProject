@@ -6,7 +6,7 @@
 # @Time : 2024/1/26 11:41
 import pytest
 
-from DolphinTest.DolphinApiTest.src.page import project
+from DolphinTest.DolphinApiTest.src.page.Project import project
 
 
 class TestProject:
