@@ -15,8 +15,8 @@ instance.interceptors.request.use(config=>{
   return config
 })
 
-axios.interceptors.request.use(function (config)){
+axios.interceptors.request.use(function (config){
   // Do something before request is sent
-}
+})
 
 export default instance
