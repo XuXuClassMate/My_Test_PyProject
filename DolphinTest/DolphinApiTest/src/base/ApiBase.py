@@ -5,10 +5,10 @@
 # @IDE: PyCharm
 # @Time : 2024/1/24 14:39
 import json
+import os
 
 import pytest
 import requests
-from jsonpath import jsonpath
 from jsonpath_ng import parse
 from DolphinTest.DolphinConfig import DolphinConfig
 from DolphinTest.logsfile.LogFile import Logs
@@ -135,3 +135,18 @@ class ApiBase(DolphinConfig):
             self.log.echolog("No match found: " + path)
         else:
             return matches
+
+    def template_json(self, json_file_path, replace_list: dict):
+        self.log.echolog("template_json func file name：" + str(json_file_path))
+        file_path = "./src/resources/" + json_file_path
+        with open(file_path, 'r', encoding='utf-8') as file:
+            json_data = json.load(file)
+
+        for key, value in replace_list.items():
+            json_data[key] = value
+
+        # update json file operation
+        # with open(file_path, 'w', encoding='utf-8') as file:
+        #     json.dump(json_data, file, indent=4)
+
+        return json_data

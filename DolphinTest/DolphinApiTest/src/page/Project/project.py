@@ -26,7 +26,7 @@ class Project(ApiBase):
         self.log.echolog("project create api result data: " + str(result_data))
         return result_data
 
-    def search(self, searchVal:str = None,**kwargs):
+    def search(self, searchVal: str = None, **kwargs):
         param = {
             "pageSize": 10,
             "pageNo": 1,
