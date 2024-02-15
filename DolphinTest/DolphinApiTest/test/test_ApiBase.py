@@ -49,6 +49,7 @@ class TestApiBase:
             "host": "www.xuxuclassmaet.cn",
             "port": 4453,
             "database": "default",
+            "Test-add-type": "XuXuClassMate"
         }
 
         result = self.apibase.template_json("datasources/datasources.json", date)
