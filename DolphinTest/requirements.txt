@@ -1,0 +1,6 @@
+jsonpath_ng == 1.6.1
+pytest == 7.0.1
+pytest-assume==2.4.3
+requests == 2.27.1
+pytest-playwright == 0.4.4
+locust == 2.23.2.dev7

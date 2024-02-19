@@ -11,7 +11,7 @@ import pytest
 import requests
 from jsonpath_ng import parse
 from DolphinTest.DolphinConfig import DolphinConfig
-from DolphinTest.logsfile.LogFile import Logs
+from DolphinTest.LogFile import Logs
 
 
 class ApiBase(DolphinConfig):
