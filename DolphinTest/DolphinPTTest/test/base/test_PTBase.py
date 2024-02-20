@@ -8,7 +8,7 @@ from locust import HttpUser
 from DolphinTest.DolphinPTTest.src.base.PTBase import PTBase
 class Test_PTBase:
     def setup_class(self):
-        self.pt = PTBase()
+        self.pt = PTBase(None)
     def test__login(self):
         print(self.pt._login())
 

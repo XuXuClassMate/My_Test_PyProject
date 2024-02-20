@@ -7,8 +7,8 @@
 from DolphinTest.DolphinPTTest.src.base.PTBase import PTBase
 
 class Home(PTBase):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, client):
+        super().__init__(client)
 
     def TaskStateCount(self):
         param = {

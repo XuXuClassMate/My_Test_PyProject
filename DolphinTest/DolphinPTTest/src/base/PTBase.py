@@ -12,9 +12,9 @@ from datetime import datetime
 
 
 class PTBase(DolphinConfig):
-    def __init__(self):
+    def __init__(self, client):
         super().__init__()
-        self.client = clinet()
+        self.client = client
 
 
     def _login(self):
