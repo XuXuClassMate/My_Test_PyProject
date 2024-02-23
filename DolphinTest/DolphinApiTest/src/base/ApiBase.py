@@ -110,15 +110,6 @@ class ApiBase(DolphinConfig):
         else:
             self.log.echolog("HTTP an error occurred. Status code: " + str(response.status_code))
 
-    def getUserName(self):
-        return self.userName
-
-    def getPassWord(self):
-        return self.passWord
-
-    def getBaseUrl(self):
-        return self.baseUrl
-
     @staticmethod
     def getHeaders():
         Header = {

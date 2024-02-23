@@ -12,3 +12,12 @@ class DolphinConfig:
         self.userName: str = "admin"
         self.passWord: str = "dolphinscheduler123"
         self.baseUrl: str = "http://xuxuclassmate.cn:12345/dolphinscheduler"
+
+    def getUserName(self):
+        return self.userName
+
+    def getPassWord(self):
+        return self.passWord
+
+    def getBaseUrl(self):
+        return self.baseUrl

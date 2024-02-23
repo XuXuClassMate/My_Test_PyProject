@@ -100,12 +100,3 @@ class PTBase(DolphinConfig):
             "now_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         }
         return date
-
-    def getUserName(self):
-        return self.userName
-
-    def getPassWord(self):
-        return self.passWord
-
-    def getBaseUrl(self):
-        return self.baseUrl
