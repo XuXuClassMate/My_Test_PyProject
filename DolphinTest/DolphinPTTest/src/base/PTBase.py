@@ -35,7 +35,7 @@ class PTBase(DolphinConfig):
         self.client.cookies = self._login()
 
     def on_stop(self):
-        self.client.clear_cookies()
+        self.client.cookies.clear()
         self.client.close()
 
     """

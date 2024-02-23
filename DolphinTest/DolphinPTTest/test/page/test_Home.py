@@ -7,15 +7,32 @@
 from DolphinTest.DolphinPTTest.src.base.PTBase import PTBase
 from DolphinTest.DolphinPTTest.src.page.Home import Home
 from locust import HttpUser, task, between
-class HomeUserBehavior(HttpUser):
+class HomeBehaviorTest(HttpUser):
     wait_time = between(1, 2)
 
-    def on_start(self):
-        ptbase =  PTBase(self.client)
-        ptbase.on_start()
+    def __init__(self,client):
+        super().__init__(client)
+        self.ptbase = None
+        self.home = None
 
-    @task
-    def test_home(self):
-        home =  Home(self.client)
-        home.TaskStateCount()
+    def on_start(self):
+        self.ptbase =  PTBase(self.client)
+        self.ptbase.on_start()
+        self.home = Home(self.client)
+
+    def on_stop(self):
+        self.ptbase.on_stop()
+    @task(10)
+    def test_TaskStateCount(self):
+        self.home.TaskStateCount()
+
+
+    @task(20)
+    def test_DefineUserCount(self):
+        self.home.DefineUserCount()
+
+    @task(30)
+    def test_ProcessStateCount(self):
+        self.home.ProcessStateCount()
+
 

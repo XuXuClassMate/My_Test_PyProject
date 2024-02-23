@@ -17,3 +17,16 @@ class Home(PTBase):
             "projectCode": 0
         }
         self.GET("/projects/analysis/task-state-count", params=param)
+    def DefineUserCount(self):
+        param = {
+            "projectCode": 0
+        }
+        self.GET("/projects/analysis/define-user-count", params=param)
+
+    def ProcessStateCount(self):
+        param = {
+            "startDate": self.getNowTime()["today_midnight"],
+            "endDate": self.getNowTime()["now_time"],
+            "projectCode": 0
+        }
+        self.GET("/projects/analysis/process-state-count", params=param)
