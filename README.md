@@ -4,7 +4,7 @@
  
 _我将会在上面搭建长时间运行的CI/CD、数据库等、web页面等_
 
-- [It's my web](./terrace/myweb) ----->[URL：xuxuclassmate.cn](https://www.xuxuclassmate.com)
+- [It's my web](./terrace/myweb) ----->[URL：xuxuclassmate.com](https://www.xuxuclassmate.com)
 
 ![webpage for me](./terrace/myweb/img/related/demo.jpg)
 #
